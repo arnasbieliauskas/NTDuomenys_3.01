@@ -251,6 +251,85 @@ public partial class MainWindow : Window
 		}
 	}
 
+	private static class CompareStyleRegistry
+	{
+		public static void Apply(Styles styles)
+		{
+			Style primaryStyle = new Style((Selector? x) => x.OfType<Button>().Class("primary"))
+			{
+				Setters =
+				{
+					new Setter(TemplatedControl.BackgroundProperty, new SolidColorBrush(Color.Parse("#1d4ed8"))),
+					new Setter(TemplatedControl.ForegroundProperty, Brushes.White),
+					new Setter(TemplatedControl.BorderBrushProperty, new SolidColorBrush(Color.Parse("#1d4ed8"))),
+					new Setter(TemplatedControl.FontSizeProperty, 20.0),
+					new Setter(TemplatedControl.FontWeightProperty, FontWeight.DemiBold),
+					new Setter(TemplatedControl.PaddingProperty, new Thickness(32.0, 18.0)),
+					new Setter(TemplatedControl.BorderThicknessProperty, new Thickness(0.0)),
+					new Setter(Layoutable.HorizontalAlignmentProperty, HorizontalAlignment.Left),
+					new Setter(Layoutable.VerticalAlignmentProperty, VerticalAlignment.Center),
+					new Setter(Visual.EffectProperty, null),
+					new Setter(TemplatedControl.TemplateProperty, new FuncControlTemplate<Button>((control, _) =>
+					{
+						Border border = new Border
+						{
+							Name = "primaryChrome",
+							Width = control.Width,
+							Height = control.Height,
+							MinWidth = control.MinWidth,
+							MinHeight = control.MinHeight,
+							CornerRadius = new CornerRadius(999.0),
+							HorizontalAlignment = control.HorizontalAlignment,
+							VerticalAlignment = control.VerticalAlignment
+						};
+						border.Bind(Border.BackgroundProperty, control.GetObservable(TemplatedControl.BackgroundProperty));
+						border.Bind(Border.BorderBrushProperty, control.GetObservable(TemplatedControl.BorderBrushProperty));
+						border.Bind(Border.BorderThicknessProperty, control.GetObservable(TemplatedControl.BorderThicknessProperty));
+						border.Bind(Decorator.PaddingProperty, control.GetObservable(TemplatedControl.PaddingProperty));
+						ContentPresenter contentPresenter = new ContentPresenter
+						{
+							HorizontalAlignment = HorizontalAlignment.Center,
+							VerticalAlignment = VerticalAlignment.Center
+						};
+						contentPresenter.Bind(ContentPresenter.ContentProperty, control.GetObservable(ContentControl.ContentProperty));
+						contentPresenter.Bind(ContentPresenter.ForegroundProperty, control.GetObservable(TemplatedControl.ForegroundProperty));
+						border.Child = contentPresenter;
+						return border;
+					}))
+				}
+			};
+			Style hoverStyle = new Style((Selector? x) => x.OfType<Button>().Class("primary").PropertyEquals(InputElement.IsPointerOverProperty, true))
+			{
+				Setters =
+				{
+					new Setter(TemplatedControl.BackgroundProperty, new SolidColorBrush(Color.Parse("#e2e8f0"))),
+					new Setter(TemplatedControl.BorderBrushProperty, new SolidColorBrush(Color.Parse("#cbd5f5"))),
+					new Setter(TemplatedControl.ForegroundProperty, new SolidColorBrush(Color.Parse("#1e3a8a"))),
+					new Setter(Visual.EffectProperty, new DropShadowEffect
+					{
+						BlurRadius = 18.0,
+						OffsetX = 0.0,
+						OffsetY = 5.0,
+						Opacity = 0.3,
+						Color = Color.Parse("#94a3b8")
+					})
+				}
+			};
+			styles.Add(primaryStyle);
+			styles.Add(hoverStyle);
+		}
+	}
+
+	private static void EnableWindowActivationOnClick(Window window)
+	{
+		if (window == null)
+		{
+			return;
+		}
+
+		window.PointerPressed += (_, _) => window.Activate();
+	}
+
 	private sealed class CompareStatsWindow : Window
 	{
 		private readonly IDatabaseService _databaseService;
@@ -263,25 +342,23 @@ public partial class MainWindow : Window
 
 		private readonly ObservableCollection<string> _cityOptions = new ObservableCollection<string>();
 
-		private static bool _compareStylesRegistered;
+		private ComboBox _objectCombo = null!;
 
-	private ComboBox _objectCombo = null;
+		private ComboBox _roomsCombo = null!;
 
-	private ComboBox _roomsCombo = null;
+		private readonly List<ComboBox> _cityCombos = new List<ComboBox>();
 
-	private readonly List<ComboBox> _cityCombos = new List<ComboBox>();
+		private StackPanel _cityComboPanel = null!;
 
-	private StackPanel _cityComboPanel = null;
+		private CheckBox _compareAvgPriceCheckBox = null!;
 
-	private CheckBox _compareAvgPriceCheckBox = null;
+		private CheckBox _compareAvgPricePerSquareCheckBox = null!;
 
-	private CheckBox _compareAvgPricePerSquareCheckBox = null;
+		private DatePicker _fromDate = null!;
 
-		private DatePicker _fromDate = null;
+		private DatePicker _toDate = null!;
 
-		private DatePicker _toDate = null;
-
-		private Button _removeCityButton = null;
+		private Button _removeCityButton = null!;
 
 		private bool _suppressChanges;
 
@@ -295,82 +372,13 @@ public partial class MainWindow : Window
 			base.Title = "Palyginti statistika";
 			base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
 			base.CanResize = false;
-			EnsureCompareStyles();
+			CompareStyleRegistry.Apply(base.Styles);
+			EnableWindowActivationOnClick(this);
 			base.Content = BuildContent();
 			base.Opened += async delegate
 			{
 				await LoadFiltersAsync();
 			};
-		}
-
-		private void EnsureCompareStyles()
-		{
-			if (!_compareStylesRegistered)
-			{
-				_compareStylesRegistered = true;
-				Style item = new Style((Selector? x) => x.OfType<Button>().Class("primary"))
-				{
-					Setters = 
-					{
-						(SetterBase)new Setter(TemplatedControl.BackgroundProperty, new SolidColorBrush(Color.Parse("#1d4ed8"))),
-						(SetterBase)new Setter(TemplatedControl.ForegroundProperty, Brushes.White),
-						(SetterBase)new Setter(TemplatedControl.BorderBrushProperty, new SolidColorBrush(Color.Parse("#1d4ed8"))),
-						(SetterBase)new Setter(TemplatedControl.FontSizeProperty, 20.0),
-						(SetterBase)new Setter(TemplatedControl.FontWeightProperty, FontWeight.DemiBold),
-						(SetterBase)new Setter(TemplatedControl.PaddingProperty, new Thickness(32.0, 18.0)),
-						(SetterBase)new Setter(TemplatedControl.BorderThicknessProperty, new Thickness(0.0)),
-						(SetterBase)new Setter(Layoutable.HorizontalAlignmentProperty, HorizontalAlignment.Left),
-						(SetterBase)new Setter(Layoutable.VerticalAlignmentProperty, VerticalAlignment.Center),
-						(SetterBase)new Setter(Visual.EffectProperty, null),
-						(SetterBase)new Setter(TemplatedControl.TemplateProperty, new FuncControlTemplate<Button>(delegate(Button control, INameScope _)
-						{
-							Border border = new Border
-							{
-								Name = "primaryChrome",
-								Width = control.Width,
-								Height = control.Height,
-								MinWidth = control.MinWidth,
-								MinHeight = control.MinHeight,
-								CornerRadius = new CornerRadius(999.0),
-								HorizontalAlignment = control.HorizontalAlignment,
-								VerticalAlignment = control.VerticalAlignment
-							};
-							border.Bind(Border.BackgroundProperty, control.GetObservable(TemplatedControl.BackgroundProperty));
-							border.Bind(Border.BorderBrushProperty, control.GetObservable(TemplatedControl.BorderBrushProperty));
-							border.Bind(Border.BorderThicknessProperty, control.GetObservable(TemplatedControl.BorderThicknessProperty));
-							border.Bind(Decorator.PaddingProperty, control.GetObservable(TemplatedControl.PaddingProperty));
-							ContentPresenter contentPresenter = new ContentPresenter
-							{
-								HorizontalAlignment = HorizontalAlignment.Center,
-								VerticalAlignment = VerticalAlignment.Center
-							};
-							contentPresenter.Bind(ContentPresenter.ContentProperty, control.GetObservable(ContentControl.ContentProperty));
-							contentPresenter.Bind(ContentPresenter.ForegroundProperty, control.GetObservable(TemplatedControl.ForegroundProperty));
-							border.Child = contentPresenter;
-							return border;
-						}))
-					}
-				};
-				Style item2 = new Style((Selector? x) => x.OfType<Button>().Class("primary").PropertyEquals(InputElement.IsPointerOverProperty, true))
-				{
-					Setters = 
-					{
-						(SetterBase)new Setter(TemplatedControl.BackgroundProperty, new SolidColorBrush(Color.Parse("#e2e8f0"))),
-						(SetterBase)new Setter(TemplatedControl.BorderBrushProperty, new SolidColorBrush(Color.Parse("#cbd5f5"))),
-						(SetterBase)new Setter(TemplatedControl.ForegroundProperty, new SolidColorBrush(Color.Parse("#1e3a8a"))),
-						(SetterBase)new Setter(Visual.EffectProperty, new DropShadowEffect
-						{
-							BlurRadius = 18.0,
-							OffsetX = 0.0,
-							OffsetY = 5.0,
-							Opacity = 0.3,
-							Color = Color.Parse("#94a3b8")
-						})
-					}
-				};
-				base.Styles.Add(item);
-				base.Styles.Add(item2);
-			}
 		}
 
 		private Control BuildContent()
@@ -857,7 +865,8 @@ public partial class MainWindow : Window
 
 				int totalListings = await GetTotalListingCountAsync(cities, objectType, rooms, null, fromDate, toDate);
 				string resultsText = $"Rezultatai: {totalListings}";
-				await MainWindow.ShowLineChartAsync(this, seriesList, "Palyginimo grafikas", resultsText);
+				Window chartOwner = (Owner as Window) ?? this;
+				await MainWindow.ShowLineChartAsync(chartOwner, seriesList, "Palyginimo grafikas", resultsText);
 			}
 			catch (Exception ex)
 			{
@@ -1663,7 +1672,26 @@ public partial class MainWindow : Window
 	private async void OnCompareStatsClick(object? sender, RoutedEventArgs e)
 	{
 		_logService.Info("Paspaustas mygtukas: Palyginti statistika.");
+		CompareModeSelectionWindow selection = new CompareModeSelectionWindow();
+		selection.CompareCitiesRequested += OnCompareModeWindowCompareCitiesRequested;
+		selection.CompareMicrodistrictsRequested += OnCompareModeWindowCompareMicrodistrictsRequested;
+		selection.Closed += (_, _) =>
+		{
+			selection.CompareCitiesRequested -= OnCompareModeWindowCompareCitiesRequested;
+			selection.CompareMicrodistrictsRequested -= OnCompareModeWindowCompareMicrodistrictsRequested;
+		};
+		selection.Show(this);
+	}
+
+	private void OnCompareModeWindowCompareCitiesRequested(object? sender, EventArgs e)
+	{
 		CompareStatsWindow dialog = new CompareStatsWindow(_databaseService, _logService);
+		dialog.Show(this);
+	}
+
+	private void OnCompareModeWindowCompareMicrodistrictsRequested(object? sender, EventArgs e)
+	{
+		CompareMicrodistrictsWindow dialog = new CompareMicrodistrictsWindow(_databaseService, _logService);
 		dialog.Show(this);
 	}
 
@@ -2554,7 +2582,8 @@ public partial class MainWindow : Window
 				select p).ToList();
 			if (points.Count != 0)
 			{
-				await ShowLineChartAsync(this, new[]
+				Window chartOwner = (Owner as Window) ?? this;
+				await ShowLineChartAsync(chartOwner, new[]
 				{
 					new LineSeries("Vidutinis €/m² pokytis", points, Color.Parse("#059669"))
 				}, "Vidutinis €/m² pokytis");
@@ -2618,7 +2647,8 @@ public partial class MainWindow : Window
 				select p).ToList();
 			if (points.Count != 0)
 			{
-				await ShowLineChartAsync(this, new[]
+				Window chartOwner = (Owner as Window) ?? this;
+				await ShowLineChartAsync(chartOwner, new[]
 				{
 					new LineSeries("Vidutinė kaina pagal filtrus", points, Color.Parse("#1d4ed8"))
 				}, "Vidutinė kaina pagal filtrus");
@@ -2825,7 +2855,8 @@ public partial class MainWindow : Window
 		}).ToList();
 			if (pointsData.Count >= 2)
 			{
-				await MainWindow.ShowLineChartAsync(this, new[]
+					Window chartOwner = (Owner as Window) ?? this;
+					await MainWindow.ShowLineChartAsync(chartOwner, new[]
 				{
 					new LineSeries("Kainos pokytis", pointsData, Color.Parse("#1d4ed8"))
 				}, "Kainos pokytis");
@@ -2838,6 +2869,713 @@ public partial class MainWindow : Window
 			_logService.Error("Nepavyko parodyti kainos grafiko.", ex3);
 		}
 	}
+
+		private sealed class CompareModeSelectionWindow : Window
+		{
+			public event EventHandler? CompareCitiesRequested;
+
+			public event EventHandler? CompareMicrodistrictsRequested;
+
+			public CompareModeSelectionWindow()
+			{
+				base.Title = "Palyginimo modulis";
+				base.Width = 420.0;
+				base.Height = 260.0;
+				base.CanResize = false;
+				base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+			base.Background = Brushes.White;
+			CompareStyleRegistry.Apply(base.Styles);
+			EnableWindowActivationOnClick(this);
+			base.Content = BuildContent();
+			}
+
+			private Control BuildContent()
+			{
+				TextBlock intro = new TextBlock
+				{
+					Text = "Pasirinkite, ką norite palyginti:",
+					FontSize = 16.0,
+					FontWeight = FontWeight.SemiBold,
+					Foreground = new SolidColorBrush(Color.Parse("#0f172a"))
+				};
+
+				Button compareCitiesButton = CreateModeButton("Palyginti miestus");
+				compareCitiesButton.Click += (_, _) =>
+				{
+					CompareCitiesRequested?.Invoke(this, EventArgs.Empty);
+				};
+
+				Button compareMicrodistrictsButton = CreateModeButton("Palyginti mikrorajonus");
+				compareMicrodistrictsButton.Click += (_, _) =>
+				{
+					CompareMicrodistrictsRequested?.Invoke(this, EventArgs.Empty);
+				};
+
+				StackPanel buttons = new StackPanel
+				{
+					Spacing = 16.0,
+					Children =
+					{
+						compareCitiesButton,
+						compareMicrodistrictsButton
+					}
+				};
+
+				StackPanel content = new StackPanel
+				{
+					Spacing = 16.0,
+					Margin = new Thickness(24.0),
+					Children =
+					{
+						intro,
+						buttons
+					}
+				};
+
+				return content;
+			}
+
+			private static Button CreateModeButton(string text)
+			{
+				Button button = new Button
+				{
+					Content = text,
+					Classes = { "primary" },
+					HorizontalAlignment = HorizontalAlignment.Stretch,
+					FontSize = 18.0,
+					Padding = new Thickness(26.0, 14.0),
+					BorderThickness = new Thickness(0.0),
+					Cursor = new Cursor(StandardCursorType.Hand)
+				};
+				return button;
+			}
+		}
+
+		private sealed class CompareMicrodistrictsWindow : Window
+		{
+			private readonly IDatabaseService _databaseService;
+
+			private readonly ILogService _logService;
+
+			private readonly ObservableCollection<string> _objectOptions = new ObservableCollection<string>();
+
+			private readonly ObservableCollection<string> _cityOptions = new ObservableCollection<string>();
+
+			private readonly ObservableCollection<string> _microDistrictOptions = new ObservableCollection<string>();
+
+			private readonly List<ComboBox> _microDistrictCombos = new List<ComboBox>();
+
+			private ComboBox _objectCombo = null!;
+
+			private ComboBox _cityCombo = null!;
+
+			private StackPanel _microDistrictPanel = null!;
+
+			private Button _removeMicrodistrictButton = null!;
+
+			private DatePicker _fromDate = null!;
+
+			private DatePicker _toDate = null!;
+
+			private CheckBox _averagePriceCheckBox = null!;
+
+			private CheckBox _averagePricePerSqCheckBox = null!;
+
+			private int _selectionSuppressCount;
+
+			public CompareMicrodistrictsWindow(IDatabaseService databaseService, ILogService logService)
+			{
+				_databaseService = databaseService;
+				_logService = logService;
+				base.Title = "Palyginti mikrorajonus";
+				base.Width = 1120.0;
+				base.Height = 420.0;
+				base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+				base.CanResize = false;
+				base.Background = new SolidColorBrush(Color.Parse("#f6f7fb"));
+				CompareStyleRegistry.Apply(base.Styles);
+				EnableWindowActivationOnClick(this);
+				base.Content = BuildContent();
+				base.Opened += async delegate
+				{
+					await LoadFilterOptionsAsync();
+				};
+			}
+
+			private Control BuildContent()
+			{
+				_objectCombo = BuildCombo();
+				_cityCombo = BuildCombo();
+				_fromDate = new DatePicker
+				{
+					Width = 160.0
+				};
+				_toDate = new DatePicker
+				{
+					Width = 160.0
+				};
+				_averagePriceCheckBox = new CheckBox
+				{
+					Content = "Vidutinė pardavimo kaina"
+				};
+				_averagePricePerSqCheckBox = new CheckBox
+				{
+					Content = "Vidutinė €/m²"
+				};
+				_averagePriceCheckBox.Classes.Add("compare-option");
+				_averagePricePerSqCheckBox.Classes.Add("compare-option");
+				StackPanel compareCriteria = new StackPanel
+				{
+					Spacing = 8.0,
+					Children =
+					{
+						new TextBlock
+						{
+							Text = "Palyginti pagal:",
+							FontSize = 14.0,
+							FontWeight = FontWeight.SemiBold,
+							Foreground = new SolidColorBrush(Color.Parse("#0f172a"))
+						},
+						new Border
+						{
+							Background = Brushes.White,
+							BorderBrush = new SolidColorBrush(Color.Parse("#e2e8f0")),
+							BorderThickness = new Thickness(1.0),
+							CornerRadius = new CornerRadius(16.0),
+							Padding = new Thickness(12.0),
+							Child = new StackPanel
+							{
+								Spacing = 6.0,
+								Children =
+								{
+									_averagePriceCheckBox,
+									_averagePricePerSqCheckBox
+								}
+							}
+						}
+					}
+				};
+				Grid fieldGrid = new Grid
+				{
+					ColumnDefinitions = new ColumnDefinitions("Auto,*"),
+					ColumnSpacing = 24.0
+				};
+				StackPanel leftColumn = new StackPanel
+				{
+					Spacing = 16.0,
+					VerticalAlignment = VerticalAlignment.Top,
+					MinWidth = 220.0
+				};
+				StackPanel buttonColumn = new StackPanel
+				{
+					Spacing = 8.0
+				};
+				Button addMicrodistrictButton = CreatePrimaryActionButton("Pridėti mikrorajoną");
+				addMicrodistrictButton.Click += (_, _) => AddMicrodistrictCombo();
+				_removeMicrodistrictButton = CreatePrimaryActionButton("Pašalinti mikrorajoną");
+				_removeMicrodistrictButton.Click += (_, _) => RemoveMicrodistrictCombo();
+				buttonColumn.Children.Add(addMicrodistrictButton);
+				buttonColumn.Children.Add(_removeMicrodistrictButton);
+				leftColumn.Children.Add(buttonColumn);
+				leftColumn.Children.Add(compareCriteria);
+				_microDistrictPanel = new StackPanel
+				{
+					Spacing = 8.0
+				};
+				AddMicrodistrictCombo();
+				StackPanel fieldsPanel = new StackPanel
+				{
+					Spacing = 16.0,
+					VerticalAlignment = VerticalAlignment.Top
+				};
+				Grid fieldsGrid = new Grid
+				{
+					ColumnDefinitions = new ColumnDefinitions("*,*"),
+					ColumnSpacing = 16.0
+				};
+				StackPanel leftFields = new StackPanel
+				{
+					Spacing = 12.0
+				};
+				leftFields.Children.Add(BuildField("Objekto tipas", _objectCombo));
+				leftFields.Children.Add(BuildField("Mikrorajonas", _microDistrictPanel));
+				Grid.SetColumn(leftFields, 0);
+				StackPanel rightFields = new StackPanel
+				{
+					Spacing = 12.0
+				};
+				rightFields.Children.Add(BuildField("Miestas / gyvenvietė", _cityCombo));
+				StackPanel dateRangePanel = new StackPanel
+				{
+					Spacing = 6.0
+				};
+				dateRangePanel.Children.Add(new TextBlock
+				{
+					Text = "Data nuo / iki",
+					FontSize = 14.0,
+					Foreground = new SolidColorBrush(Color.Parse("#475467"))
+				});
+				dateRangePanel.Children.Add(new StackPanel
+				{
+					Orientation = Orientation.Horizontal,
+					Spacing = 8.0,
+					Children =
+					{
+						_fromDate,
+						_toDate
+					}
+				});
+				rightFields.Children.Add(dateRangePanel);
+				Grid.SetColumn(rightFields, 1);
+				fieldsGrid.Children.Add(leftFields);
+				fieldsGrid.Children.Add(rightFields);
+				fieldsPanel.Children.Add(fieldsGrid);
+				fieldGrid.Children.Add(leftColumn);
+				fieldGrid.Children.Add(fieldsPanel);
+				Grid.SetColumn(leftColumn, 0);
+				Grid.SetColumn(fieldsPanel, 1);
+				ScrollViewer scrollViewer = new ScrollViewer
+				{
+					Content = new Border
+					{
+						Background = Brushes.White,
+						BorderBrush = new SolidColorBrush(Color.Parse("#e2e8f0")),
+						BorderThickness = new Thickness(1.0),
+						CornerRadius = new CornerRadius(24.0),
+						Padding = new Thickness(24.0),
+						Child = fieldGrid
+					},
+					VerticalScrollBarVisibility = ScrollBarVisibility.Auto
+				};
+				Button graphButton = new Button
+				{
+					Content = "Grafikas",
+					HorizontalAlignment = HorizontalAlignment.Right,
+					VerticalAlignment = VerticalAlignment.Center,
+					Padding = new Thickness(26.0, 14.0),
+					MinWidth = 160.0,
+					FontSize = 20.0
+				};
+				graphButton.Classes.Add("primary");
+				graphButton.Click += OnMicrodistrictGraphClick;
+				StackPanel footer = new StackPanel
+				{
+					Orientation = Orientation.Horizontal,
+					HorizontalAlignment = HorizontalAlignment.Right,
+					Margin = new Thickness(16.0, 12.0, 16.0, 16.0),
+					Spacing = 8.0,
+					Children =
+					{
+						graphButton
+					}
+				};
+				Grid root = new Grid
+				{
+					RowDefinitions = new RowDefinitions("*,Auto")
+				};
+				Grid.SetRow(scrollViewer, 0);
+				Grid.SetRow(footer, 1);
+				root.Children.Add(scrollViewer);
+				root.Children.Add(footer);
+				return root;
+			}
+
+			private async Task LoadFilterOptionsAsync()
+			{
+				BeginSelectionSuppression();
+				_objectCombo.ItemsSource = _objectOptions;
+				_cityCombo.ItemsSource = _cityOptions;
+				foreach (ComboBox microCombo in _microDistrictCombos)
+				{
+					microCombo.ItemsSource = _microDistrictOptions;
+				}
+				_objectCombo.SelectionChanged += OnFilterSelectionChanged;
+				_cityCombo.SelectionChanged += OnFilterSelectionChanged;
+				try
+				{
+					await UpdateObjectOptionsAsync();
+					await UpdateCityOptionsAsync();
+					await RefreshMicrodistrictOptionsAsync();
+				}
+				finally
+				{
+					EndSelectionSuppression();
+				}
+			}
+
+			private async Task UpdateObjectOptionsAsync()
+			{
+				BeginSelectionSuppression();
+				string? current = NormalizeSelection(_objectCombo.SelectedItem as string);
+				_objectCombo.SelectedIndex = -1;
+				_objectOptions.Clear();
+				_objectOptions.Add(string.Empty);
+				try
+				{
+					foreach (string item in await _databaseService.GetDistinctSearchObjectsAsync(CancellationToken.None))
+					{
+						_objectOptions.Add(item);
+					}
+				}
+				catch (Exception ex)
+				{
+					_logService.Error("Nepavyko uzkrauti objekto saraso (mikrorajonai).", ex);
+				}
+				SetSelectionSafely(_objectCombo, _objectOptions, current, "Object combo");
+				EndSelectionSuppression();
+			}
+
+			private async Task UpdateCityOptionsAsync()
+			{
+				BeginSelectionSuppression();
+				string? current = NormalizeSelection(_cityCombo.SelectedItem as string);
+				string? objectType = NormalizeSelection(_objectCombo.SelectedItem as string);
+				_cityCombo.SelectedIndex = -1;
+				_cityOptions.Clear();
+				_cityOptions.Add(string.Empty);
+				try
+				{
+					foreach (string city in await _databaseService.GetDistinctSearchCitiesAsync(objectType, CancellationToken.None))
+					{
+						_cityOptions.Add(city);
+					}
+				}
+				catch (Exception ex)
+				{
+					_logService.Error("Nepavyko uzkrauti miesto saraso (mikrorajonai).", ex);
+				}
+				SetSelectionSafely(_cityCombo, _cityOptions, current, "City combo");
+				EndSelectionSuppression();
+			}
+
+			private async Task RefreshMicrodistrictOptionsAsync()
+			{
+				BeginSelectionSuppression();
+				var combos = _microDistrictCombos.ToList();
+				List<string> previousSelections = combos.Select((ComboBox combo) => NormalizeSelection(combo.SelectedItem as string)).ToList();
+				foreach (ComboBox combo in combos)
+				{
+					combo.SelectedIndex = -1;
+				}
+				string? objectType = NormalizeSelection(_objectCombo.SelectedItem as string);
+				string? city = NormalizeSelection(_cityCombo.SelectedItem as string);
+				_microDistrictOptions.Clear();
+				_microDistrictOptions.Add(string.Empty);
+				try
+				{
+					foreach (string district in await _databaseService.GetDistinctMicroDistrictsAsync(objectType, city, null, CancellationToken.None))
+					{
+						_microDistrictOptions.Add(district);
+					}
+				}
+				catch (Exception ex)
+				{
+					_logService.Error("Nepavyko uzkrauti mikrorajonu saraso.", ex);
+				}
+				for (int i = 0; i < combos.Count; i++)
+				{
+					string? selection = (i < previousSelections.Count) ? previousSelections[i] : null;
+					SetSelectionSafely(combos[i], _microDistrictOptions, selection, $"Microdistrict #{i + 1}");
+				}
+				EndSelectionSuppression();
+			}
+
+			private void AddMicrodistrictCombo()
+			{
+				ComboBox combo = BuildCombo();
+				combo.ItemsSource = _microDistrictOptions;
+				combo.SelectionChanged += OnFilterSelectionChanged;
+				_microDistrictPanel.Children.Add(combo);
+				_microDistrictCombos.Add(combo);
+				UpdateMicrodistrictButtonState();
+			}
+
+			private void RemoveMicrodistrictCombo()
+			{
+				if (_microDistrictCombos.Count <= 1)
+				{
+					return;
+				}
+
+				ComboBox combo = _microDistrictCombos.Last();
+				_microDistrictPanel.Children.Remove(combo);
+				_microDistrictCombos.Remove(combo);
+				UpdateMicrodistrictButtonState();
+			}
+
+			private void UpdateMicrodistrictButtonState()
+			{
+				if (_removeMicrodistrictButton != null)
+				{
+					_removeMicrodistrictButton.IsEnabled = _microDistrictCombos.Count > 1;
+				}
+			}
+
+			private async void OnFilterSelectionChanged(object? sender, SelectionChangedEventArgs e)
+			{
+				if (IsSelectionSuppressed)
+				{
+					return;
+				}
+
+				await RefreshMicrodistrictOptionsAsync();
+			}
+
+			private void BeginSelectionSuppression()
+			{
+				_selectionSuppressCount++;
+			}
+
+			private void EndSelectionSuppression()
+			{
+				if (_selectionSuppressCount > 0)
+				{
+					_selectionSuppressCount--;
+				}
+			}
+
+			private bool IsSelectionSuppressed => _selectionSuppressCount > 0;
+
+			private Button CreatePrimaryActionButton(string content)
+			{
+				Button button = new Button
+				{
+					Content = content,
+					MinWidth = 200.0,
+					Padding = new Thickness(18.0, 12.0),
+					FontSize = 14.0,
+					FontWeight = FontWeight.SemiBold,
+					HorizontalAlignment = HorizontalAlignment.Stretch,
+					VerticalAlignment = VerticalAlignment.Center,
+					HorizontalContentAlignment = HorizontalAlignment.Center,
+					VerticalContentAlignment = VerticalAlignment.Center,
+					Cursor = new Cursor(StandardCursorType.Hand)
+				};
+				button.Classes.Add("primary");
+				return button;
+			}
+
+			private void SetSelectionSafely(ComboBox combo, ObservableCollection<string> items, string? selection, string friendlyName)
+			{
+				if (combo == null || items == null)
+				{
+					return;
+				}
+
+				combo.SelectedIndex = -1;
+				if (items.Count == 0)
+				{
+					LogSelection(friendlyName, items.Count, selection, combo);
+					return;
+				}
+
+				if (!string.IsNullOrWhiteSpace(selection) && items.Contains(selection))
+				{
+					combo.SelectedItem = selection;
+					LogSelection(friendlyName, items.Count, selection, combo);
+					return;
+				}
+
+				LogSelection(friendlyName, items.Count, selection, combo);
+			}
+
+			private void LogSelectionState()
+			{
+#if DEBUG
+				LogComboState("Object combo", _objectCombo, _objectOptions);
+				LogComboState("City combo", _cityCombo, _cityOptions);
+				for (int i = 0; i < _microDistrictCombos.Count; i++)
+				{
+					LogComboState($"Microdistrict #{i + 1}", _microDistrictCombos[i], _microDistrictOptions);
+				}
+#endif
+			}
+
+			private void LogComboState(string friendlyName, ComboBox combo, IReadOnlyList<string> options)
+			{
+#if DEBUG
+				int itemCount = options?.Count ?? combo.Items?.Count ?? 0;
+				int selectedIndex = combo.SelectedIndex;
+				string selected = combo.SelectedItem as string ?? string.Empty;
+				bool exists = !string.IsNullOrWhiteSpace(selected) && options != null && options.Contains(selected);
+				_logService.Info($"DEBUG - {friendlyName}: items={itemCount}, selectedIndex={selectedIndex}, selected='{selected}', exists={exists}");
+#endif
+			}
+
+			private void LogSelection(string friendlyName, int itemCount, string? requested, ComboBox combo)
+			{
+#if DEBUG
+				string resolved = combo.SelectedItem as string ?? string.Empty;
+				_logService.Info($"DEBUG - {friendlyName}: items={itemCount}, requested='{requested ?? "-"}', selectedIndex={combo.SelectedIndex}, selected='{resolved}'");
+#endif
+			}
+
+			private async void OnMicrodistrictGraphClick(object? sender, RoutedEventArgs e)
+			{
+				try
+				{
+					if (IsSelectionSuppressed)
+					{
+						_logService.Info("Palaukite, kol mikroregionu pasirinkimai bus atnaujinti.");
+						Dispatcher.UIThread.Post(() => OnMicrodistrictGraphClick(sender, e));
+						return;
+					}
+
+					LogSelectionState();
+					bool showAvgPrice = _averagePriceCheckBox.IsChecked == true;
+					bool showAvgPricePerSq = _averagePricePerSqCheckBox.IsChecked == true;
+					if (!showAvgPrice && !showAvgPricePerSq)
+					{
+						_logService.Info("Pasirinkite bent viena palyginimo kriteriju.");
+						return;
+					}
+
+					string city = NormalizeSelection(_cityCombo.SelectedItem as string);
+					if (string.IsNullOrWhiteSpace(city))
+					{
+						_logService.Info("Pasirinkite miesta arba gyvenviete.");
+						return;
+					}
+
+					string? objectType = NormalizeSelection(_objectCombo.SelectedItem as string);
+					List<string> selectedMicrodistricts = _microDistrictCombos
+						.Select((ComboBox combo) => NormalizeSelection(combo.SelectedItem as string))
+						.Where((string value) => !string.IsNullOrWhiteSpace(value))
+						.Distinct(StringComparer.OrdinalIgnoreCase)
+						.ToList();
+					if (selectedMicrodistricts.Count == 0)
+					{
+						_logService.Info("Pasirinkite bent viena mikrorajona.");
+						return;
+					}
+
+					DateTime? fromDate = _fromDate.SelectedDate?.DateTime.Date;
+					DateTime? toDate = _toDate.SelectedDate?.DateTime.Date;
+					var microdistrictHistories = new List<(string Microdistrict, IReadOnlyList<CityHistoryEntry> History)>();
+					foreach (string micro in selectedMicrodistricts)
+					{
+						IReadOnlyList<CityHistoryEntry> history = await _databaseService.GetCityHistoryAsync(new[] { city }, objectType, micro, null, fromDate, toDate, CancellationToken.None);
+						if (history.Count > 0)
+						{
+							microdistrictHistories.Add((micro, history));
+						}
+					}
+
+					if (microdistrictHistories.Count == 0)
+					{
+						_logService.Info("Pasirinkti mikrorajonai neturi istoriniu duomenu.");
+						return;
+					}
+
+					List<LineSeries> seriesList = new List<LineSeries>();
+					foreach (var (microdistrict, history) in microdistrictHistories)
+					{
+						IReadOnlyList<CityHistoryEntry> ordered = history.OrderBy((CityHistoryEntry entry) => entry.Date).ToList();
+						if (showAvgPrice)
+						{
+							List<(DateTime date, double value)> pricePoints = ordered.Where((CityHistoryEntry entry) => entry.AveragePrice.HasValue).Select((CityHistoryEntry entry) => (entry.Date, entry.AveragePrice!.Value)).ToList();
+							if (pricePoints.Count > 0)
+							{
+								seriesList.Add(new LineSeries($"{microdistrict} - Vidutinė kaina", pricePoints));
+							}
+						}
+
+						if (showAvgPricePerSq)
+						{
+							List<(DateTime date, double value)> perSqPoints = ordered.Where((CityHistoryEntry entry) => entry.AveragePricePerSquare.HasValue).Select((CityHistoryEntry entry) => (entry.Date, entry.AveragePricePerSquare!.Value)).ToList();
+							if (perSqPoints.Count > 0)
+							{
+								seriesList.Add(new LineSeries($"{microdistrict} - €/m²", perSqPoints));
+							}
+						}
+					}
+
+					if (seriesList.Count == 0)
+					{
+						_logService.Info("Pasirinkti kriterijai neturi pakankamai duomenu grafike.");
+						return;
+					}
+
+					int totalListings = 0;
+					foreach (string micro in selectedMicrodistricts)
+					{
+						totalListings += await GetTotalListingCountAsync(city, objectType, micro, fromDate, toDate);
+					}
+
+					string resultsText = $"Rezultatai: {totalListings}";
+					Window chartOwner = (Owner as Window) ?? this;
+					await MainWindow.ShowLineChartAsync(chartOwner, seriesList, "Palyginimo grafikas", resultsText);
+				}
+				catch (Exception ex)
+				{
+					_logService.Error("Nepavyko sugeneruoti mikrorajonu grafiko.", ex);
+				}
+			}
+
+			private async Task<int> GetTotalListingCountAsync(string city, string? objectType, string? microDistrict, DateTime? fromDate, DateTime? toDate)
+			{
+				if (string.IsNullOrWhiteSpace(city))
+				{
+					return 0;
+				}
+
+				StatsQueryResult result = await _databaseService.QueryListingsAsync(
+					searchObject: objectType,
+					searchCity: city,
+					microDistrict: microDistrict,
+					address: null,
+					fromDate: fromDate,
+					toDate: toDate,
+					priceFrom: null,
+					priceTo: null,
+					pricePerSquareFrom: null,
+					pricePerSquareTo: null,
+					areaFrom: null,
+					areaTo: null,
+					areaLotFrom: null,
+					areaLotTo: null,
+					rooms: null,
+					houseState: null,
+					limit: 1,
+					offset: 0,
+					onlyWithoutHistory: false,
+					onlyFavorites: false,
+					onlyPriceDrop: false,
+					onlyPriceIncrease: false,
+					orderByPriceDescending: false,
+					orderByPriceAscending: false,
+					cancellationToken: CancellationToken.None);
+				return result.TotalCount;
+			}
+
+			private ComboBox BuildCombo()
+			{
+				return new ComboBox
+				{
+					HorizontalAlignment = HorizontalAlignment.Stretch,
+					Width = double.NaN
+				};
+			}
+
+			private static StackPanel BuildField(string label, Control input)
+			{
+				return new StackPanel
+				{
+					Spacing = 6.0,
+					HorizontalAlignment = HorizontalAlignment.Stretch,
+					Children =
+					{
+						new TextBlock
+						{
+							Text = label,
+							FontSize = 14.0,
+							Foreground = new SolidColorBrush(Color.Parse("#475467"))
+						},
+						input
+					}
+				};
+			}
+		}
 
 		private sealed class LineSeries
 		{
@@ -3214,6 +3952,7 @@ public partial class MainWindow : Window
 				}
 			};
 			chartWindow.WindowStartupLocation = ((!(owner is Window)) ? WindowStartupLocation.CenterScreen : WindowStartupLocation.CenterOwner);
+			EnableWindowActivationOnClick(chartWindow);
 			chartWindow.Show(owner);
 			return Task.CompletedTask;
 		}

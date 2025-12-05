@@ -364,3 +364,18 @@
 4. Migracijoje atnaujintas unikalus indeksas i UNIQUE(TRIM(ExternalId), TRIM(SearchObject), CollectedOn) - silpni tarpai ir du kartus identiski skelbimai su tuo paciu kolekcijos laiku daugiau nerodomi, bet dabartiniai duomenys lieka vientisi.
 5. FTS5 adresu lentele dabar sujungiama tik tada, kai vartotojas pateikia laisvo teksto adresui; be filtro griztama i iprastus indeksuotus filtrus, o tokenizer'is unicode61 lieka dokumentuotas kaip palaikantis lietuviskas raidziu variacijas.
 6. Schema patikros duomenu uzklausose pasalintos, kad kiekviena viesoji operacija vykdo EnsureLatestListingsPreparedAsync tik viena karta, o papildomi EnsureLatestListingsSchemaAsync() iskvietimai is kitu vietu pasalinti - perejimai tapo ramesni ir aiskus.
+
+# Chapter 63 - Palyginimo modulis
+
+1. „Palyginti statistika“ dabar pirmiausia keliauja į naują pasirinkimų langą, kuriame tekstas paaiškina vartotojui, kad galima rinktis „Palyginti miestus“ arba „Palyginti mikrorajonus“, o abu mygtukai naudoja tą pačią `primary` klasę kaip kairės pusės statinių scenarijų mygtukai.
+2. Paspaudus „Palyginti miestus“ atidaromas esamas „Palyginti statistika“ dialogas, o „Palyginti mikrorajonus“ kol kas registruoja veiksmą loge ir laukia konkrečios mikrorajonų palyginimo logikos įgyvendinimo, todėl pasirinkimų langas lieka atviras, kad būtų galima pakeisti sprendimą.
+
+# Chapter 64 - Mikrorajonų palyginimas
+
+1. Pridėtas atskiras „Palyginti mikrorajonus“ langas su objekto tipo, miesto/gyvenvietės, mikrorajono ir datų laukelių grupe, kad būtų galima tiksliai taikyti nuoseklias „palyginti pagal“ taisykles (vidutinė kaina, €/m²).
+2. Mygtukas „Grafikas“ paleidžia tą pačią diagramos logiką kaip bendrame „Palyginti statistika“ lange, įskaitant microdistrict filtrą, o rezultatai parodo tik pasirinktą miestą su pasirinktais kriterijais, kad vartotojas galėtų palyginti konkrečius mikrorajonų duomenis.
+
+# Chapter 65 - Diagramų langų stumdymas
+
+1. Visi palyginimo grafikai naudoja bendrą lango savininko/aktyvavimo logiką (`chartOwner` ir `EnableWindowActivationOnClick`), todėl jie nebėra visada viršuje ir respektuoja vartotojo pasirinkimą paspaudus kitą atidarytą langą.
+2. Statistikos lango grafikai vėl gali būti iškeliami į priekinį planą taip pat, kaip mikrorajonų grafikas, todėl vartotojui nebereikia uždarinėti dialogų ar refokusavimo.
