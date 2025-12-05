@@ -1,0 +1,1075 @@
+2025-11-25 09:21:08 [INFO] Programa paleista.
+2025-11-25 09:21:08 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 09:21:08 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 09:21:08 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 09:21:08 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 09:21:08 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 09:21:09 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 09:21:09 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 09:21:09 [INFO] Langas atidarytas.
+2025-11-25 09:21:11 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 09:21:11 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 09:21:17 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 09:21:17 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 09:21:32 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-25 09:21:35 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-25 09:21:36 [INFO] Puslapis 1: rasta 18 skelbimu.
+2025-11-25 09:21:40 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-25 09:21:44 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-25 09:21:48 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-25 09:21:53 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-25 09:22:34 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-25 09:22:40 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-25 09:22:44 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-25 09:22:48 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-25 09:23:30 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-25 09:23:34 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-25 09:23:38 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-25 09:24:20 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-25 09:24:24 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-25 09:25:05 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-25 09:25:47 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-11-25 09:25:51 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-11-25 09:26:33 [INFO] Puslapis 18: rasta 30 skelbimu.
+2025-11-25 09:27:15 [INFO] Puslapis 19: rasta 27 skelbimu.
+2025-11-25 09:27:58 [INFO] Puslapis 20: rasta 28 skelbimu.
+2025-11-25 09:28:02 [INFO] Puslapis 21: rasta 27 skelbimu.
+2025-11-25 09:28:44 [INFO] Puslapis 22: rasta 26 skelbimu.
+2025-11-25 09:29:25 [INFO] Puslapis 23: rasta 29 skelbimu.
+2025-11-25 09:30:07 [INFO] Puslapis 24: rasta 25 skelbimu.
+2025-11-25 09:30:49 [INFO] Puslapis 25: rasta 26 skelbimu.
+2025-11-25 09:31:30 [INFO] Puslapis 26: rasta 25 skelbimu.
+2025-11-25 09:32:12 [INFO] Puslapis 27: rasta 26 skelbimu.
+2025-11-25 09:32:54 [INFO] Puslapis 28: rasta 25 skelbimu.
+2025-11-25 09:33:35 [INFO] Puslapis 29: rasta 3 skelbimu.
+2025-11-25 09:33:35 [INFO] Surinkta 715 skelbimu. Pradedamas issaugojimas.
+2025-11-25 09:33:35 [INFO] Skelbimu issaugojimas baigtas. Nauji: 715, praleisti: 0.
+2025-11-25 09:34:28 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-25 09:34:30 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 09:34:30 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 09:34:30 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 09:34:30 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 09:34:31 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 09:34:34 [INFO] Pasirinktas objekto tipas: Butai pardavimui
+2025-11-25 09:34:34 [INFO] Miestu sarasas atnaujintas (objektas: Butai pardavimui)
+2025-11-25 09:34:34 [INFO] Kambariu sarasas atnaujintas (objektas: Butai pardavimui, miestas: -, adresas: -)
+2025-11-25 09:34:34 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: -, adresas: -, kambariai: -)
+2025-11-25 09:34:35 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 09:34:35 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 09:34:35 [INFO] Adresu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 09:34:35 [INFO] Kambariu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -)
+2025-11-25 09:34:35 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:34:36 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:34:36 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:51:50 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 09:51:50 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 09:51:56 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 09:51:56 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 09:51:56 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 09:51:56 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 09:51:57 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 09:51:57 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 09:52:13 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-25 09:52:16 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-25 09:52:17 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-25 09:52:21 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-25 09:52:24 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-25 09:52:29 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-25 09:52:33 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-25 09:52:37 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-25 09:52:41 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-25 09:52:45 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-25 09:52:50 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-25 09:52:55 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-25 09:53:36 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-25 09:54:18 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-25 09:54:22 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-25 09:55:03 [INFO] Puslapis 14: rasta 17 skelbimu.
+2025-11-25 09:55:03 [INFO] Surinkta 342 skelbimu. Pradedamas issaugojimas.
+2025-11-25 09:55:03 [INFO] Skelbimu issaugojimas baigtas. Nauji: 342, praleisti: 0.
+2025-11-25 09:55:09 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-25 09:55:10 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 09:55:10 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 09:55:10 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 09:55:10 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: -, adresas: -, kambariai: -)
+2025-11-25 09:55:11 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 09:55:13 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 09:55:13 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 09:55:13 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 09:55:13 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 09:55:15 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 09:55:15 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 09:55:15 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 09:55:15 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 09:55:15 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:55:20 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:55:20 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:56:00 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:56:00 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:58:03 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:58:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:58:05 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:58:05 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 09:58:10 [INFO] Pasirinkti kambariai: 1 (miestas: Klaipėdos m., objektas: Butai nuomai)
+2025-11-25 09:58:10 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 09:58:11 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 09:58:11 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 10:45:36 [INFO] Programa uždaryta.
+2025-11-25 12:45:54 [INFO] Programa paleista.
+2025-11-25 12:45:54 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 12:45:54 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 12:45:54 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 12:45:54 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 12:45:54 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 12:45:55 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 12:45:55 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 12:45:55 [INFO] Langas atidarytas.
+2025-11-25 12:45:56 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 12:45:56 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 12:45:56 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 12:45:56 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 12:45:57 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 12:46:01 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 12:46:01 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 12:46:01 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 12:46:01 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 12:46:04 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 12:46:04 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 12:46:04 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 12:46:04 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 12:46:04 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 12:46:06 [INFO] Pasirinkti kambariai: 1 (miestas: Klaipėdos m., objektas: Butai nuomai)
+2025-11-25 12:46:06 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 12:46:07 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 12:46:07 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 12:46:33 [INFO] Pasirinktas adresas: Šaltkalvių g. (miestas: Klaipėdos m.)
+2025-11-25 12:46:33 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šaltkalvių g.)
+2025-11-25 12:46:33 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šaltkalvių g., kambariai: -)
+2025-11-25 12:46:35 [INFO] Pasirinktas adresas: Šiaulių g. (miestas: Klaipėdos m.)
+2025-11-25 12:46:35 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šiaulių g.)
+2025-11-25 12:46:35 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šiaulių g., kambariai: -)
+2025-11-25 12:46:39 [INFO] Pasirinkti kambariai: 1 (miestas: Klaipėdos m., objektas: Butai nuomai)
+2025-11-25 12:46:39 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šiaulių g., kambariai: 1)
+2025-11-25 12:46:40 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 12:46:40 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Šiaulių g., kambariai: 1)
+2025-11-25 12:47:33 [INFO] Pasirinktas adresas: Tulpių g. (miestas: Klaipėdos m.)
+2025-11-25 12:47:33 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Tulpių g.)
+2025-11-25 12:47:33 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Tulpių g., kambariai: -)
+2025-11-25 12:47:35 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 12:47:35 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Tulpių g., kambariai: -)
+2025-11-25 13:00:51 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:00:51 [INFO] Pasirinktas miestas: -
+2025-11-25 13:00:51 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 13:00:51 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:00:52 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 13:00:52 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:00:53 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 13:00:53 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:07:14 [INFO] Programa uzdaryta.
+2025-11-25 13:08:54 [INFO] Programa paleista.
+2025-11-25 13:08:54 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 13:08:54 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 13:08:54 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 13:08:54 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 13:08:54 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 13:08:55 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 13:08:55 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 13:08:55 [INFO] Langas atidarytas.
+2025-11-25 13:08:57 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 13:08:57 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:08:57 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:08:57 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:08:58 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 13:09:26 [INFO] Programa uzdaryta.
+2025-11-25 13:10:15 [INFO] Programa paleista.
+2025-11-25 13:10:15 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 13:10:15 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 13:10:15 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 13:10:15 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 13:10:15 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 13:10:15 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 13:10:15 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 13:10:15 [INFO] Langas atidarytas.
+2025-11-25 13:10:16 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 13:10:16 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:10:16 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:10:16 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:10:17 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 13:12:33 [INFO] Programa uzdaryta.
+2025-11-25 13:12:52 [INFO] Programa paleista.
+2025-11-25 13:12:52 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 13:12:52 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 13:12:52 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 13:12:52 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 13:12:52 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 13:12:53 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 13:12:53 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 13:12:53 [INFO] Langas atidarytas.
+2025-11-25 13:12:54 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 13:12:54 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:12:54 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:12:54 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:12:55 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 13:13:02 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 13:13:04 [INFO] Paspaustas mygtukas: Rodyti pazymetus (veiksmas neimplementuotas).
+2025-11-25 13:13:21 [INFO] Programa uzdaryta.
+2025-11-25 13:18:58 [INFO] Programa paleista.
+2025-11-25 13:18:58 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 13:18:58 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 13:18:58 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 13:18:58 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 13:18:58 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 13:18:58 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 13:18:58 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 13:18:58 [INFO] Langas atidarytas.
+2025-11-25 13:19:00 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 13:19:00 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:19:00 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:19:00 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:19:00 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 13:19:03 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 13:19:13 [INFO] Paspaustas mygtukas: Išvalyti.
+2025-11-25 13:19:13 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:19:13 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:19:13 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:19:17 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 13:19:17 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 13:19:17 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 13:19:17 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:19:20 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 13:19:20 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:19:24 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 13:19:40 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 13:19:40 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 13:19:40 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 13:19:40 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 13:19:40 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 13:19:42 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 13:19:42 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 13:19:48 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 13:20:21 [INFO] Paspaustas mygtukas: Išvalyti.
+2025-11-25 13:20:21 [INFO] Pasirinktas objekto tipas: -
+2025-11-25 13:20:21 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:20:21 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 13:20:21 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 13:20:21 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 13:20:21 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:20:21 [INFO] Pasirinktas miestas: -
+2025-11-25 13:20:21 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 13:20:21 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:20:21 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 13:20:21 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 13:20:21 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 13:20:23 [INFO] Programa uzdaryta.
+2025-11-25 13:20:23 [INFO] Programa uždaryta.
+2025-11-25 13:50:59 [INFO] Programa paleista.
+2025-11-25 13:50:59 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 13:50:59 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 13:50:59 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 13:50:59 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 13:50:59 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 13:51:00 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 13:51:00 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 13:51:00 [INFO] Langas atidarytas.
+2025-11-25 13:51:01 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 13:51:01 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 13:51:06 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 13:51:07 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 13:51:46 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-25 13:52:08 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-25 13:52:08 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-25 13:52:51 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-25 13:53:33 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-25 13:54:14 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-25 13:54:18 [INFO] Puslapis 5: rasta 16 skelbimu.
+2025-11-25 13:54:18 [INFO] Surinkta 116 skelbimu. Pradedamas issaugojimas.
+2025-11-25 13:54:18 [INFO] Skelbimu issaugojimas baigtas. Nauji: 116, praleisti: 0.
+2025-11-25 14:38:56 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-25 14:39:15 [INFO] Programa uždaryta.
+2025-11-25 16:24:22 [INFO] Programa paleista.
+2025-11-25 16:24:22 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 16:24:22 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 16:24:22 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 16:24:22 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 16:24:22 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 16:24:23 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 16:24:23 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 16:24:23 [INFO] Langas atidarytas.
+2025-11-25 16:24:24 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 16:24:24 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 16:24:24 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 16:24:24 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:24:25 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 16:24:29 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 16:24:29 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 16:24:29 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 16:24:29 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 16:24:29 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 16:24:30 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:24:30 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 16:25:00 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 16:25:00 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 16:25:00 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 16:25:00 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 16:25:00 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 16:25:02 [INFO] Pasirinkti kambariai: 1 (miestas: Klaipėdos m., objektas: Butai nuomai)
+2025-11-25 16:25:02 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 16:25:03 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:25:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: 1)
+2025-11-25 16:25:44 [INFO] Pasirinktas adresas: Ragainės g. (miestas: Klaipėdos m.)
+2025-11-25 16:25:44 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Ragainės g.)
+2025-11-25 16:25:44 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Ragainės g., kambariai: -)
+2025-11-25 16:25:46 [INFO] Pasirinktas adresas: Rumpiškės g. (miestas: Klaipėdos m.)
+2025-11-25 16:25:46 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Rumpiškės g.)
+2025-11-25 16:25:46 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Rumpiškės g., kambariai: -)
+2025-11-25 16:25:48 [INFO] Pasirinkti kambariai: 1 (miestas: Klaipėdos m., objektas: Butai nuomai)
+2025-11-25 16:25:48 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Rumpiškės g., kambariai: 1)
+2025-11-25 16:25:50 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:25:50 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: Rumpiškės g., kambariai: 1)
+2025-11-25 16:29:21 [INFO] Programa uzdaryta.
+2025-11-25 16:29:21 [INFO] Programa uždaryta.
+2025-11-25 16:29:35 [INFO] Programa paleista.
+2025-11-25 16:29:35 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 16:29:35 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 16:29:35 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 16:29:35 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 16:29:35 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 16:29:35 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 16:29:35 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 16:29:35 [INFO] Langas atidarytas.
+2025-11-25 16:29:37 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 16:29:37 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 16:29:37 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 16:29:37 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:29:38 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 16:29:46 [INFO] Programa uzdaryta.
+2025-11-25 16:35:34 [INFO] Programa paleista.
+2025-11-25 16:35:34 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 16:35:34 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 16:35:34 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 16:35:34 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 16:35:34 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 16:35:35 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 16:35:35 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 16:35:35 [INFO] Langas atidarytas.
+2025-11-25 16:35:36 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 16:35:36 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 16:35:36 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 16:35:36 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:35:37 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 16:35:41 [INFO] Programa uzdaryta.
+2025-11-25 16:39:37 [INFO] Programa paleista.
+2025-11-25 16:39:37 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 16:39:37 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 16:39:37 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 16:39:37 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 16:39:37 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 16:39:37 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 16:39:37 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 16:39:37 [INFO] Langas atidarytas.
+2025-11-25 16:39:39 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 16:39:39 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 16:39:39 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 16:39:39 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:39:40 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 16:39:42 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:39:42 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:39:45 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 16:39:50 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 16:40:02 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:40:02 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:40:06 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 16:40:06 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 16:40:06 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 16:40:06 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 16:40:06 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 16:40:07 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 16:40:07 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 16:40:41 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 16:40:50 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 16:40:50 [INFO] Pasirinktas miestas: -
+2025-11-25 16:40:50 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 16:40:50 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 16:40:52 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 16:41:46 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 16:41:57 [INFO] Programa uzdaryta.
+2025-11-25 16:41:57 [INFO] Programa uždaryta.
+2025-11-25 18:47:26 [INFO] Programa paleista.
+2025-11-25 18:47:26 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 18:47:26 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 18:47:26 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 18:47:26 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 18:47:26 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 18:47:28 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 18:47:28 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 18:47:28 [INFO] Langas atidarytas.
+2025-11-25 18:47:32 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 18:47:32 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 18:47:32 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 18:47:32 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 18:47:33 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 18:47:47 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 18:48:07 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 18:48:07 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 18:48:07 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 18:48:07 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 18:48:10 [INFO] Objektu sarasas atnaujintas (miestas: Šiaulių m.)
+2025-11-25 18:48:10 [INFO] Pasirinktas miestas: Šiaulių m.
+2025-11-25 18:48:10 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., kambariai: -)
+2025-11-25 18:48:10 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -)
+2025-11-25 18:48:10 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 18:48:11 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 18:48:11 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 18:49:11 [INFO] Programa uzdaryta.
+2025-11-25 18:59:00 [INFO] Programa paleista.
+2025-11-25 18:59:00 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 18:59:00 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 18:59:00 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 18:59:00 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 18:59:00 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 18:59:00 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 18:59:00 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 18:59:00 [INFO] Langas atidarytas.
+2025-11-25 18:59:02 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 18:59:02 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 18:59:02 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 18:59:02 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 18:59:02 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 18:59:09 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 18:59:09 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 18:59:09 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 18:59:09 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 18:59:09 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 18:59:11 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 18:59:11 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 18:59:19 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 18:59:21 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 18:59:22 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 18:59:22 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 18:59:30 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 19:00:42 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 19:00:42 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:01:16 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 19:01:16 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 19:01:16 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 19:01:16 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 19:01:16 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:01:18 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 19:01:18 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:01:22 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 19:01:22 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:01:38 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 19:01:38 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 19:01:45 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 19:01:46 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 19:02:12 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-25 19:02:33 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-25 19:02:34 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-25 19:03:16 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-25 19:03:57 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-25 19:04:39 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-25 19:05:20 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-25 19:06:02 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-25 19:06:43 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-25 19:07:25 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-25 19:08:07 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-25 19:08:49 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-25 19:09:31 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-25 19:10:12 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-25 19:10:54 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-25 19:11:35 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-25 19:12:17 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-25 19:12:58 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-11-25 19:13:40 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-11-25 19:13:44 [INFO] Puslapis 18: rasta 25 skelbimu.
+2025-11-25 19:14:26 [INFO] Puslapis 19: rasta 26 skelbimu.
+2025-11-25 19:15:08 [INFO] Puslapis 20: rasta 25 skelbimu.
+2025-11-25 19:15:49 [INFO] Puslapis 21: rasta 20 skelbimu.
+2025-11-25 19:15:49 [INFO] Surinkta 521 skelbimu. Pradedamas issaugojimas.
+2025-11-25 19:15:49 [INFO] Skelbimu issaugojimas baigtas. Nauji: 520, praleisti: 1.
+2025-11-25 19:15:57 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-25 19:15:58 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 19:15:58 [INFO] Pasirinktas objekto tipas: -
+2025-11-25 19:15:58 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 19:15:58 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 19:15:58 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 19:15:58 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:15:58 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 19:15:58 [INFO] Pasirinktas miestas: -
+2025-11-25 19:15:58 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 19:15:58 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 19:15:58 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 19:15:58 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 19:15:58 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 19:15:58 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 19:16:03 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 19:16:03 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 19:16:03 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 19:16:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 19:16:05 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 19:16:05 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 19:16:05 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., kambariai: -)
+2025-11-25 19:16:05 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -)
+2025-11-25 19:16:05 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 19:16:07 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 19:16:07 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 19:18:18 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 19:18:18 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 19:18:18 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 19:18:18 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 19:18:18 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:18:20 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 19:18:20 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 19:18:27 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 19:18:27 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 19:18:29 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 19:18:29 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 19:18:56 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-25 19:19:17 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-25 19:19:18 [INFO] Puslapis 1: rasta 23 skelbimu.
+2025-11-25 19:19:59 [INFO] Puslapis 2: rasta 23 skelbimu.
+2025-11-25 19:20:41 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-25 19:21:22 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-25 19:22:04 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-25 19:22:45 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-25 19:23:27 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-25 19:24:08 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-25 19:24:50 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-25 19:25:32 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-25 19:26:13 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-25 19:26:55 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-25 19:27:36 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-25 19:27:40 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-25 19:28:22 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-25 19:29:03 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-11-25 19:29:45 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-11-25 19:30:26 [INFO] Puslapis 18: rasta 24 skelbimu.
+2025-11-25 19:31:08 [INFO] Puslapis 19: rasta 25 skelbimu.
+2025-11-25 19:31:49 [INFO] Puslapis 20: rasta 25 skelbimu.
+2025-11-25 19:32:31 [INFO] Puslapis 21: rasta 25 skelbimu.
+2025-11-25 19:33:13 [INFO] Puslapis 22: rasta 25 skelbimu.
+2025-11-25 19:33:54 [INFO] Puslapis 23: rasta 25 skelbimu.
+2025-11-25 19:34:36 [INFO] Puslapis 24: rasta 25 skelbimu.
+2025-11-25 19:35:17 [INFO] Puslapis 25: rasta 25 skelbimu.
+2025-11-25 19:35:59 [INFO] Puslapis 26: rasta 24 skelbimu.
+2025-11-25 19:36:41 [INFO] Puslapis 27: rasta 25 skelbimu.
+2025-11-25 19:37:22 [INFO] Puslapis 28: rasta 25 skelbimu.
+2025-11-25 19:38:04 [INFO] Puslapis 29: rasta 25 skelbimu.
+2025-11-25 19:38:47 [INFO] Puslapis 30: rasta 25 skelbimu.
+2025-11-25 19:39:29 [INFO] Puslapis 31: rasta 25 skelbimu.
+2025-11-25 19:40:10 [INFO] Puslapis 32: rasta 25 skelbimu.
+2025-11-25 19:40:54 [INFO] Puslapis 33: rasta 25 skelbimu.
+2025-11-25 19:41:35 [INFO] Puslapis 34: rasta 25 skelbimu.
+2025-11-25 19:42:17 [INFO] Puslapis 35: rasta 25 skelbimu.
+2025-11-25 19:42:58 [INFO] Puslapis 36: rasta 25 skelbimu.
+2025-11-25 19:43:40 [INFO] Puslapis 37: rasta 25 skelbimu.
+2025-11-25 19:44:21 [INFO] Puslapis 38: rasta 25 skelbimu.
+2025-11-25 19:45:03 [INFO] Puslapis 39: rasta 25 skelbimu.
+2025-11-25 19:45:07 [INFO] Puslapis 40: rasta 25 skelbimu.
+2025-11-25 19:45:49 [INFO] Puslapis 41: rasta 25 skelbimu.
+2025-11-25 19:46:30 [INFO] Puslapis 42: rasta 25 skelbimu.
+2025-11-25 19:47:12 [INFO] Puslapis 43: rasta 25 skelbimu.
+2025-11-25 19:47:54 [INFO] Puslapis 44: rasta 25 skelbimu.
+2025-11-25 19:48:35 [INFO] Puslapis 45: rasta 25 skelbimu.
+2025-11-25 19:49:17 [INFO] Puslapis 46: rasta 25 skelbimu.
+2025-11-25 19:49:21 [INFO] Puslapis 47: rasta 25 skelbimu.
+2025-11-25 19:50:03 [INFO] Puslapis 48: rasta 27 skelbimu.
+2025-11-25 19:50:44 [INFO] Puslapis 49: rasta 26 skelbimu.
+2025-11-25 19:51:26 [INFO] Puslapis 50: rasta 25 skelbimu.
+2025-11-25 19:52:07 [INFO] Puslapis 51: rasta 26 skelbimu.
+2025-11-25 19:52:49 [INFO] Puslapis 52: rasta 25 skelbimu.
+2025-11-25 19:53:31 [INFO] Puslapis 53: rasta 25 skelbimu.
+2025-11-25 19:54:12 [INFO] Puslapis 54: rasta 25 skelbimu.
+2025-11-25 19:54:54 [INFO] Puslapis 55: rasta 25 skelbimu.
+2025-11-25 19:55:35 [INFO] Puslapis 56: rasta 25 skelbimu.
+2025-11-25 19:56:17 [INFO] Puslapis 57: rasta 25 skelbimu.
+2025-11-25 19:56:59 [INFO] Puslapis 58: rasta 25 skelbimu.
+2025-11-25 19:57:40 [INFO] Puslapis 59: rasta 25 skelbimu.
+2025-11-25 19:58:22 [INFO] Puslapis 60: rasta 25 skelbimu.
+2025-11-25 19:59:03 [INFO] Puslapis 61: rasta 25 skelbimu.
+2025-11-25 19:59:45 [INFO] Puslapis 62: rasta 25 skelbimu.
+2025-11-25 19:59:49 [INFO] Puslapis 63: rasta 25 skelbimu.
+2025-11-25 19:59:53 [INFO] Puslapis 64: rasta 25 skelbimu.
+2025-11-25 20:00:35 [INFO] Puslapis 65: rasta 25 skelbimu.
+2025-11-25 20:01:17 [INFO] Puslapis 66: rasta 25 skelbimu.
+2025-11-25 20:01:58 [INFO] Puslapis 67: rasta 25 skelbimu.
+2025-11-25 20:02:40 [INFO] Puslapis 68: rasta 25 skelbimu.
+2025-11-25 20:03:21 [INFO] Puslapis 69: rasta 19 skelbimu.
+2025-11-25 20:03:21 [INFO] Surinkta 1717 skelbimu. Pradedamas issaugojimas.
+2025-11-25 20:03:21 [INFO] Skelbimu issaugojimas baigtas. Nauji: 1715, praleisti: 2.
+2025-11-25 20:03:46 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-25 20:03:48 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:03:48 [INFO] Pasirinktas objekto tipas: -
+2025-11-25 20:03:48 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:03:48 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 20:03:48 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 20:03:48 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 20:03:48 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:03:48 [INFO] Pasirinktas miestas: -
+2025-11-25 20:03:48 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 20:03:48 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:03:48 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:03:48 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:03:48 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:03:48 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:03:52 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 20:03:52 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 20:03:52 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 20:03:52 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:03:54 [INFO] Objektu sarasas atnaujintas (miestas: Vilniaus m.)
+2025-11-25 20:03:54 [INFO] Pasirinktas miestas: Vilniaus m.
+2025-11-25 20:03:54 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., kambariai: -)
+2025-11-25 20:03:54 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -)
+2025-11-25 20:03:54 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -, kambariai: -)
+2025-11-25 20:03:56 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:03:56 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -, kambariai: -)
+2025-11-25 20:07:39 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 20:07:39 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 20:07:39 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., kambariai: -)
+2025-11-25 20:07:39 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -)
+2025-11-25 20:07:39 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:07:41 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:07:41 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:07:48 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 20:07:48 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 20:07:48 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 20:07:48 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 20:07:48 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 20:07:49 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:07:49 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 20:07:57 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 20:07:57 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 20:07:57 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., kambariai: -)
+2025-11-25 20:07:57 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -)
+2025-11-25 20:07:57 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:07:59 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:07:59 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:08:10 [INFO] Objektu sarasas atnaujintas (miestas: Šiaulių m.)
+2025-11-25 20:08:10 [INFO] Pasirinktas miestas: Šiaulių m.
+2025-11-25 20:08:10 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., kambariai: -)
+2025-11-25 20:08:10 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -)
+2025-11-25 20:08:10 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 20:08:12 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:08:12 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 20:11:32 [INFO] Programa uždaryta.
+2025-11-25 20:18:47 [INFO] Programa paleista.
+2025-11-25 20:18:47 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:18:47 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:18:47 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:18:47 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:18:47 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:18:47 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:18:47 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:18:47 [INFO] Langas atidarytas.
+2025-11-25 20:18:49 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:18:49 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:18:49 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:18:49 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:18:49 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:18:57 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 20:18:59 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 20:19:09 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-25 20:19:13 [INFO] Pasirinkti kambariai: 10 (miestas: -, objektas: -)
+2025-11-25 20:19:13 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: 10)
+2025-11-25 20:19:15 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:19:15 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: 10)
+2025-11-25 20:23:08 [INFO] Programa uzdaryta.
+2025-11-25 20:23:25 [INFO] Programa paleista.
+2025-11-25 20:23:25 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:23:25 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:23:25 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:23:25 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:23:25 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:23:26 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:23:26 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:23:26 [INFO] Langas atidarytas.
+2025-11-25 20:23:28 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:23:28 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:23:28 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:23:28 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:23:28 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:23:48 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 20:23:48 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 20:23:48 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Kauno m., kambariai: -)
+2025-11-25 20:23:48 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -)
+2025-11-25 20:23:48 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:23:51 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:23:51 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:23:59 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:23:59 [INFO] Pasirinktas miestas: -
+2025-11-25 20:23:59 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 20:23:59 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:24:00 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:24:00 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:27:44 [INFO] Programa uzdaryta.
+2025-11-25 20:27:44 [INFO] Programa uždaryta.
+2025-11-25 20:29:49 [INFO] Programa paleista.
+2025-11-25 20:29:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:29:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:29:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:29:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:29:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:29:50 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:29:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:29:50 [INFO] Langas atidarytas.
+2025-11-25 20:29:51 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:29:51 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:29:51 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:29:51 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:29:51 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:30:00 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 20:30:00 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 20:30:00 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 20:30:00 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:30:03 [INFO] Pasirinkti kambariai: 1 (miestas: -, objektas: Butai nuomai)
+2025-11-25 20:30:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: 1)
+2025-11-25 20:30:05 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:30:05 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: 1)
+2025-11-25 20:31:30 [INFO] Programa uzdaryta.
+2025-11-25 20:31:30 [INFO] Programa uždaryta.
+2025-11-25 20:35:24 [INFO] Programa paleista.
+2025-11-25 20:35:24 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:35:24 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:35:24 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:35:24 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:35:24 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:35:24 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:35:24 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:35:24 [INFO] Langas atidarytas.
+2025-11-25 20:35:26 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:35:26 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:35:26 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:35:26 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:35:26 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:35:31 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 20:35:31 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 20:35:31 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-11-25 20:35:31 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:35:32 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:35:32 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:37:11 [INFO] Programa uzdaryta.
+2025-11-25 20:37:11 [INFO] Programa uždaryta.
+2025-11-25 20:42:01 [INFO] Programa paleista.
+2025-11-25 20:42:01 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:42:01 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:42:01 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:42:02 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:42:02 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:42:02 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:42:02 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:42:02 [INFO] Langas atidarytas.
+2025-11-25 20:42:04 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:42:04 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:42:04 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:42:04 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:42:04 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:42:12 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 20:42:12 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 20:42:12 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Kauno m., kambariai: -)
+2025-11-25 20:42:12 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -)
+2025-11-25 20:42:12 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:42:13 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:42:13 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 20:43:51 [INFO] Programa uzdaryta.
+2025-11-25 20:43:51 [INFO] Programa uždaryta.
+2025-11-25 20:44:47 [INFO] Programa paleista.
+2025-11-25 20:44:47 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:44:47 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:44:47 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:44:47 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:44:47 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:44:48 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:44:48 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:44:48 [INFO] Langas atidarytas.
+2025-11-25 20:44:50 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:44:50 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:44:50 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:44:50 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:44:50 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:44:56 [INFO] Pasirinkti kambariai: 7 (miestas: -, objektas: -)
+2025-11-25 20:44:56 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: 7)
+2025-11-25 20:44:57 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:44:57 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: 7)
+2025-11-25 20:46:57 [INFO] Programa uzdaryta.
+2025-11-25 20:46:57 [INFO] Programa uždaryta.
+2025-11-25 20:47:49 [INFO] Programa paleista.
+2025-11-25 20:47:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:47:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:47:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:47:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:47:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:47:50 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:47:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:47:50 [INFO] Langas atidarytas.
+2025-11-25 20:47:52 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:47:52 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:47:52 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:47:52 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:47:52 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:47:57 [INFO] Objektu sarasas atnaujintas (miestas: Alytaus m.)
+2025-11-25 20:47:57 [INFO] Pasirinktas miestas: Alytaus m.
+2025-11-25 20:47:57 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Alytaus m., kambariai: -)
+2025-11-25 20:47:57 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Alytaus m., adresas: -)
+2025-11-25 20:47:57 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Alytaus m., adresas: -, kambariai: -)
+2025-11-25 20:47:58 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 20:47:58 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Alytaus m., adresas: -, kambariai: -)
+2025-11-25 20:52:45 [INFO] Programa uzdaryta.
+2025-11-25 20:52:45 [INFO] Programa uždaryta.
+2025-11-25 20:53:38 [INFO] Programa paleista.
+2025-11-25 20:53:38 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:53:38 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:53:38 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:53:38 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:53:38 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:53:38 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:53:38 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:53:38 [INFO] Langas atidarytas.
+2025-11-25 20:53:42 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:53:42 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:53:42 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:53:42 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:53:42 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:54:47 [INFO] Programa uzdaryta.
+2025-11-25 20:55:16 [INFO] Programa paleista.
+2025-11-25 20:55:16 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:55:16 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:55:16 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:55:16 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:55:16 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:55:17 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:55:17 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:55:17 [INFO] Langas atidarytas.
+2025-11-25 20:55:19 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:55:19 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:55:19 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:55:19 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:55:19 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:57:38 [INFO] Programa uzdaryta.
+2025-11-25 20:57:45 [INFO] Programa paleista.
+2025-11-25 20:57:45 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:57:45 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:57:45 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:57:45 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:57:45 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:57:45 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:57:45 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:57:46 [INFO] Langas atidarytas.
+2025-11-25 20:57:47 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:57:47 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:57:47 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:57:47 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:57:47 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:58:40 [INFO] Programa uzdaryta.
+2025-11-25 20:58:46 [INFO] Programa paleista.
+2025-11-25 20:58:46 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:58:46 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:58:46 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:58:46 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:58:46 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:58:46 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:58:46 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:58:47 [INFO] Langas atidarytas.
+2025-11-25 20:58:48 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:58:48 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:58:48 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:58:48 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:58:48 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:59:28 [INFO] Programa uzdaryta.
+2025-11-25 20:59:40 [INFO] Programa paleista.
+2025-11-25 20:59:40 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 20:59:40 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 20:59:40 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 20:59:40 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 20:59:40 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 20:59:41 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 20:59:41 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 20:59:41 [INFO] Langas atidarytas.
+2025-11-25 20:59:43 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 20:59:43 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 20:59:43 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 20:59:43 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 20:59:43 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 20:59:53 [INFO] Pasirinkti kambariai: 1 (miestas: -, objektas: -)
+2025-11-25 20:59:53 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: 1)
+2025-11-25 21:00:16 [INFO] Pasirinkti kambariai: - (miestas: -, objektas: -)
+2025-11-25 21:00:16 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:00:19 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-25 21:00:19 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-25 21:00:19 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 21:00:19 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-25 21:00:19 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 21:00:22 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 21:00:22 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 21:00:22 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-11-25 21:00:22 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-11-25 21:00:22 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 21:00:24 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:00:24 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-25 21:00:44 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 21:00:44 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 21:00:44 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., kambariai: -)
+2025-11-25 21:00:44 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -)
+2025-11-25 21:00:44 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:00:46 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:00:46 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:00:54 [INFO] Objektu sarasas atnaujintas (miestas: Šiaulių m.)
+2025-11-25 21:00:54 [INFO] Pasirinktas miestas: Šiaulių m.
+2025-11-25 21:00:54 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., kambariai: -)
+2025-11-25 21:00:54 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -)
+2025-11-25 21:00:54 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 21:00:55 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:00:55 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Šiaulių m., adresas: -, kambariai: -)
+2025-11-25 21:01:02 [INFO] Objektu sarasas atnaujintas (miestas: Vilniaus m.)
+2025-11-25 21:01:02 [INFO] Pasirinktas miestas: Vilniaus m.
+2025-11-25 21:01:02 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., kambariai: -)
+2025-11-25 21:01:02 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -)
+2025-11-25 21:01:02 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -, kambariai: -)
+2025-11-25 21:01:03 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:01:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Vilniaus m., adresas: -, kambariai: -)
+2025-11-25 21:01:46 [INFO] Programa uzdaryta.
+2025-11-25 21:05:56 [INFO] Programa paleista.
+2025-11-25 21:05:56 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:05:56 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:05:56 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:05:56 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:05:56 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:05:56 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:05:56 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:05:56 [INFO] Langas atidarytas.
+2025-11-25 21:05:58 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:05:58 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:05:58 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:05:58 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:05:58 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:06:01 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:06:01 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:06:09 [INFO] Programa uzdaryta.
+2025-11-25 21:12:40 [INFO] Programa paleista.
+2025-11-25 21:12:40 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:12:40 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:12:40 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:12:40 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:12:40 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:12:40 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:12:40 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:12:40 [INFO] Langas atidarytas.
+2025-11-25 21:12:42 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:12:42 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:12:42 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:12:42 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:12:42 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:12:47 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:12:47 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:12:56 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 21:12:56 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 21:13:01 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 21:13:01 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 21:13:01 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-25 21:13:01 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-25 21:13:02 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-25 21:13:03 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-25 21:13:11 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:13:11 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:13:11 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:13:11 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:13:11 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:13:17 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:13:17 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:13:26 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-25 21:15:59 [INFO] Programa uždaryta.
+2025-11-25 21:44:15 [INFO] Programa paleista.
+2025-11-25 21:44:15 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:44:15 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:44:15 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:44:15 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:44:15 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:44:16 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:44:16 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:44:16 [INFO] Langas atidarytas.
+2025-11-25 21:44:18 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:44:18 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:44:18 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:44:18 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:44:18 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:44:23 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:44:23 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:44:41 [INFO] Programa uzdaryta.
+2025-11-25 21:52:22 [INFO] Programa paleista.
+2025-11-25 21:52:22 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:52:22 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:52:22 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:52:22 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:52:22 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:52:22 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:52:22 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:52:22 [INFO] Langas atidarytas.
+2025-11-25 21:52:24 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:52:24 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:52:24 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:52:24 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:52:24 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:52:31 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:52:31 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:53:06 [INFO] Objektu sarasas atnaujintas (miestas: Kauno m.)
+2025-11-25 21:53:06 [INFO] Pasirinktas miestas: Kauno m.
+2025-11-25 21:53:06 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Kauno m., kambariai: -)
+2025-11-25 21:53:06 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -)
+2025-11-25 21:53:06 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:53:08 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:53:08 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:53:17 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-11-25 21:53:17 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-11-25 21:53:17 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -)
+2025-11-25 21:53:17 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., kambariai: -)
+2025-11-25 21:53:17 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:53:18 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:53:18 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:53:33 [INFO] Pasirinktas objekto tipas: -
+2025-11-25 21:53:33 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:53:33 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -)
+2025-11-25 21:53:33 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Kauno m., kambariai: -)
+2025-11-25 21:53:33 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Kauno m., adresas: -, kambariai: -)
+2025-11-25 21:53:36 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:53:36 [INFO] Pasirinktas miestas: -
+2025-11-25 21:53:36 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: -, adresas: -)
+2025-11-25 21:53:36 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:53:37 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:53:37 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:57:38 [INFO] Programa uzdaryta.
+2025-11-25 21:57:38 [INFO] Programa uždaryta.
+2025-11-25 21:58:37 [INFO] Programa paleista.
+2025-11-25 21:58:37 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:58:37 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:58:37 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:58:37 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:58:37 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:58:38 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:58:38 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:58:38 [INFO] Langas atidarytas.
+2025-11-25 21:58:39 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:58:39 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:58:39 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:58:39 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:58:39 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:58:44 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:58:44 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:59:00 [INFO] Programa uzdaryta.
+2025-11-25 21:59:00 [INFO] Programa uždaryta.
+2025-11-25 21:59:09 [INFO] Programa paleista.
+2025-11-25 21:59:09 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-25 21:59:09 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-25 21:59:09 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-25 21:59:09 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-25 21:59:09 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-25 21:59:09 [INFO] Pagrindinis langas inicializuotas.
+2025-11-25 21:59:09 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-25 21:59:09 [INFO] Langas atidarytas.
+2025-11-25 21:59:11 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-25 21:59:11 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-25 21:59:11 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-25 21:59:11 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:59:11 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-25 21:59:23 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-25 21:59:23 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-25 21:59:37 [INFO] Programa uzdaryta.
+2025-11-25 21:59:37 [INFO] Programa uždaryta.

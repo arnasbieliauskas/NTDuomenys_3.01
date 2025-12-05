@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "fXRW4C/5NZM=",
+  "success": true,
+  "projectFilePath": "C:\\VisualStudioProjects\\NTDuomenys_3.0\\inspector_tmp\\CefInspector.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\avalonia\\0.10.17\\avalonia.0.10.17.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\avalonia.remote.protocol\\0.10.17\\avalonia.remote.protocol.0.10.17.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\cefnet\\105.3.22248.142\\cefnet.105.3.22248.142.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\cefnet.avalonia\\105.3.22248.142\\cefnet.avalonia.105.3.22248.142.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\jetbrains.annotations\\10.3.0\\jetbrains.annotations.10.3.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

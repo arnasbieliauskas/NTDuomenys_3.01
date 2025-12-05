@@ -1,0 +1,561 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RpaAruodas"
+        mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="700"
+        x:Class="RpaAruodas.MainWindow"
+        Title="RpaAruodas"
+        Background="#f6f7fb">
+    <Window.Styles>
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="#1d4ed8" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="#1d4ed8" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Padding" Value="32,18" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Effect" Value="{x:Null}" />
+            <Setter Property="Template">
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="primaryChrome"
+                            Width="{TemplateBinding Width}"
+                            Height="{TemplateBinding Height}"
+                            MinWidth="{TemplateBinding MinWidth}"
+                            MinHeight="{TemplateBinding MinHeight}"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            CornerRadius="999"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}">
+                        <ContentPresenter Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="#e2e8f0" />
+            <Setter Property="BorderBrush" Value="#cbd5f5" />
+            <Setter Property="Foreground" Value="#1e3a8a" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="18"
+                                      OffsetX="0"
+                                      OffsetY="5"
+                                      Opacity="0.3"
+                                      Color="#94a3b8" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style Selector="Button.summary-link">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Foreground" Value="#1d4ed8" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Template">
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter Content="{TemplateBinding Content}"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                      VerticalAlignment="Center"
+                                      Foreground="{TemplateBinding Foreground}" />
+                </ControlTemplate>
+            </Setter>
+        </Style>
+        <Style Selector="Button.summary-link:pointerover">
+            <Setter Property="Foreground" Value="#6b7280" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        <Style Selector="Button.summary-link:disabled">
+            <Setter Property="Foreground" Value="#9ca3af" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+    </Window.Styles>
+
+    <Grid>
+        <Grid x:Name="ContentRoot"
+              Margin="48"
+              ColumnDefinitions="Auto,*"
+              ColumnSpacing="32">
+            <StackPanel VerticalAlignment="Center"
+                        Spacing="16">
+                <Button x:Name="AruodasButton"
+                        Classes="primary"
+                        Content="Aruodas.lt"
+                        Width="260"
+                        Click="OnAruodasButtonClick"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" />
+                <Button x:Name="StatsButton"
+                        Classes="primary"
+                        Content="Statistika"
+                        Width="260"
+                        Click="OnStatsButtonClick"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" />
+                    <Border x:Name="StatsSummaryPanel"
+                            Width="260"
+                            Padding="12"
+                            Background="White"
+                            BorderBrush="#e2e8f0"
+                            BorderThickness="1"
+                            CornerRadius="16"
+                            IsVisible="False">
+                        <StackPanel Spacing="6">
+                        <TextBlock Text="Suvestine"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   Foreground="#0f172a" />
+                        <Button x:Name="SummaryMaxPrice"
+                                Classes="summary-link"
+                                Click="OnOpenListingClick" />
+                        <Button x:Name="SummaryMinPrice"
+                                Classes="summary-link"
+                                Click="OnOpenListingClick" />
+                        <TextBlock x:Name="SummaryAvgPrice"
+                                   Text=""
+                                   Foreground="#0f172a" />
+                        <TextBlock x:Name="SummaryAvgPricePerSq"
+                                   Text=""
+                                   Foreground="#0f172a" />
+                        <Button x:Name="SummaryShowPerSqTrend" Classes="summary-link" Content="Atvaizduoti EUR/m2 pokyti" Click="OnShowPricePerSqTrendClick" IsVisible="False" />
+                        <Button x:Name="SummaryShowTrend" Classes="summary-link" Content="Atvaizduoti bendra kainos pokyti" Click="OnShowTrendClick" IsVisible="False" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+            <Border Grid.Column="1"
+                    Background="White"
+                    CornerRadius="32"
+                    Padding="24"
+                    BorderThickness="1"
+                    BorderBrush="#e2e8f0">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid x:Name="BrowserSurface"
+                              Width="{x:Static local:MainWindow.BrowserViewportWidth}"
+                              Height="{x:Static local:MainWindow.BrowserViewportHeight}"
+                              Background="#f8fafc"
+                              Focusable="True"
+                              PointerPressed="OnBrowserPointerPressed"
+                              PointerReleased="OnBrowserPointerReleased"
+                              PointerMoved="OnBrowserPointerMoved"
+                              PointerWheelChanged="OnBrowserPointerWheelChanged"
+                              KeyDown="OnBrowserKeyDown"
+                              TextInput="OnBrowserTextInput">
+                            <Image x:Name="AruodasPreview"
+                                   Width="{x:Static local:MainWindow.BrowserViewportWidth}"
+                                   Height="{x:Static local:MainWindow.BrowserViewportHeight}"
+                                   IsVisible="False"
+                                   Stretch="None" />
+                            <StackPanel x:Name="PreviewPlaceholder"
+                                        Background="#f8fafc"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Spacing="8">                                
+                                <TextBlock Text="Pasirinkite iš meniu, kairėje pusėje, kokį veiksmą norite atlikti."
+                                           Foreground="#475467"
+                                           HorizontalAlignment="Center" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Border x:Name="StatsContainer"
+                                IsVisible="False"
+                                Background="#f8fafc"
+                                Padding="24"
+                                MinWidth="{x:Static local:MainWindow.BrowserViewportWidth}"
+                                MinHeight="{x:Static local:MainWindow.BrowserViewportHeight}">
+                            <Grid>
+                                <StackPanel x:Name="StatsContentRoot"
+                                            Spacing="16">
+                                    <TextBlock Text="Statistika"
+                                               FontSize="22"
+                                               FontWeight="SemiBold"
+                                               Foreground="#0f172a" />
+                                    <TextBlock Text="Filtruokite ir perziurekite DB irasus."
+                                               FontSize="14"
+                                               Foreground="#1f2937" />
+
+                                    <Border Background="White"
+                                            BorderBrush="#e2e8f0"
+                                            BorderThickness="1"
+                                            CornerRadius="16"
+                                            Padding="16">
+                                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                                            <StackPanel Spacing="10">
+                                                <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12">
+                                                    <StackPanel Spacing="6" Grid.Column="0" Grid.Row="0">
+                                                        <TextBlock Text="Objekto tipas"
+                                                                   FontSize="12"
+                                                                   Foreground="#475467" />
+                                                        <ComboBox x:Name="StatsObjectCombo"
+                                                                  Width="220"
+                                                                  SelectionChanged="OnStatsObjectSelectionChanged" />
+                                                    </StackPanel>
+                                                    <StackPanel Spacing="6" Grid.Column="1" Grid.Row="0">
+                                                        <TextBlock Text="Kambariai"
+                                                                   FontSize="12"
+                                                                   Foreground="#475467" />
+                                                        <ComboBox x:Name="StatsRoomsCombo"
+                                                                  Width="220"
+                                                                  SelectionChanged="OnStatsRoomsSelectionChanged" />
+                                                    </StackPanel>
+                                                    <StackPanel Spacing="6" Grid.Column="2" Grid.Row="0">
+                                                        <TextBlock Text="Miestas / gyvenviete"
+                                                                   FontSize="12"
+                                                                   Foreground="#475467" />
+                                                        <ComboBox x:Name="StatsCityCombo"
+                                                                  Width="220"
+                                                                  SelectionChanged="OnStatsCitySelectionChanged" />
+                                                        <StackPanel Spacing="6"
+                                                                    Margin="0,8,0,0">
+                                                            <TextBlock Text="Mikrorajonas"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467" />
+                                                            <ComboBox x:Name="StatsMicroDistrictCombo"
+                                                                      Width="220"
+                                                                      SelectionChanged="OnStatsMicroDistrictSelectionChanged" />
+                                                        </StackPanel>
+                                                        <Button x:Name="AdvancedSearchToggleButton"
+                                                                Classes="summary-link"
+                                                                Content="Isplestine paieska"
+                                                                HorizontalAlignment="Left"
+                                                                Margin="0,8,0,0"
+                                                                Click="OnAdvancedSearchToggleClick" />
+                                                    </StackPanel>
+
+                                                    <Grid Grid.Column="0"
+                                                          Grid.Row="1"
+                                                          ColumnDefinitions="Auto,Auto"
+                                                          ColumnSpacing="16"
+                                                          Margin="0,8,0,0">
+                                                        <StackPanel Grid.Column="0"
+                                                                    Spacing="8">
+                                                            <Button x:Name="StatsShowLatestButton"
+                                                                    Content="Rodyti naujausius"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnShowLatestClick" />
+                                                            <Button x:Name="StatsShowMarkedButton"
+                                                                    Content="Rodyti pažymetus"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnShowMarkedClick" />
+                                                            <Button x:Name="StatsShowPriceDropButton"
+                                                                    Content="Rodyti atpigusius skelbimus"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnShowPriceDropClick" />
+                                                            <Button x:Name="StatsShowPriceIncreaseButton"
+                                                                    Content="Rodyti pabrangusius skelbimus"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnShowPriceIncreaseClick" />
+                                                        </StackPanel>
+                                                        <StackPanel Grid.Column="1"
+                                                                    Spacing="8">
+                                                            <Button x:Name="StatsCompareButton"
+                                                                    Content="Palyginti statistika"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnCompareStatsClick" />
+                                                            <Button x:Name="StatsSortByPriceButton"
+                                                                    Content="Filtruoti pagal brangiausia"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnSortByHighestPriceClick" />
+                                                            <Button x:Name="StatsSortByPriceLowestButton"
+                                                                    Content="Filtruoti pagal pigiausia"
+                                                                    Width="190"
+                                                                    Padding="12,6"
+                                                                    FontSize="12"
+                                                                    Classes="primary"
+                                                                    Click="OnSortByLowestPriceClick" />
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </Grid>
+
+                                                <StackPanel x:Name="AdvancedSearchPanel"
+                                                            Spacing="10"
+                                                            IsVisible="False">
+                                                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="12" RowSpacing="12">
+                                                        <StackPanel Spacing="6" Grid.Column="0">
+                                                            <TextBlock Text="Adresas"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467" />
+                                                            <ComboBox x:Name="StatsAddressCombo"
+                                                                      Width="220"
+                                                                      SelectionChanged="OnStatsAddressSelectionChanged" />
+
+                                                            <TextBlock Text="Plotas nuo / iki (m2)"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467"
+                                                                       Margin="0,8,0,0" />
+                                                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                                                <TextBox x:Name="StatsAreaFrom"
+                                                                         Width="120" />
+                                                                <TextBox x:Name="StatsAreaTo"
+                                                                         Width="120" />
+                                                            </StackPanel>
+                                                        </StackPanel>
+
+                                                        <StackPanel Spacing="6" Grid.Column="1">
+                                                            <TextBlock Text="Dat nuo / iki"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467" />
+                                                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                                                <DatePicker x:Name="StatsFromDate"
+                                                                            Width="140" />
+                                                                <DatePicker x:Name="StatsToDate"
+                                                                            Width="140" />
+                                                            </StackPanel>
+
+                                                            <TextBlock Text="Kaina nuo / iki (?)"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467"
+                                                                       Margin="0,8,0,0" />
+                                                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                                                <TextBox x:Name="StatsPriceFrom"
+                                                                         Width="120" />
+                                                                <TextBox x:Name="StatsPriceTo"
+                                                                         Width="120" />
+                                                            </StackPanel>
+
+                                                            <TextBlock Text="€/m2 nuo / iki"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467"
+                                                                       Margin="0,8,0,0" />
+                                                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                                                <TextBox x:Name="StatsPricePerSqFrom"
+                                                                         Width="120" />
+                                                                <TextBox x:Name="StatsPricePerSqTo"
+                                                                         Width="120" />
+                                                            </StackPanel>
+                                                        </StackPanel>
+
+                                                        <StackPanel Spacing="6" Grid.Column="2">
+                                                            <TextBlock Text="Plotas (a) nuo / iki"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467" />
+                                                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                                                <TextBox x:Name="StatsAreaLotFrom"
+                                                                         Width="120" />
+                                                                <TextBox x:Name="StatsAreaLotTo"
+                                                                         Width="120" />
+                                                            </StackPanel>
+
+                                                            <TextBlock Text="Būklė"
+                                                                       FontSize="12"
+                                                                       Foreground="#475467"
+                                                                       Margin="0,8,0,0" />
+                                                            <ComboBox x:Name="StatsHouseStateCombo"
+                                                                      Width="220"
+                                                                      SelectionChanged="OnStatsHouseStateSelectionChanged" />
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <StackPanel Grid.Column="1"
+                                                        VerticalAlignment="Top"
+                                                        Spacing="8">
+                                                <Button x:Name="StatsFilterButton"
+                                                        Content="Filtruoti"
+                                                        Classes="primary"
+                                                        Width="140"
+                                                        Click="OnStatsFilterClick" />
+                                                <Button x:Name="StatsResetButton"
+                                                        Content="Išvalyti"
+                                                        Width="140"
+                                                        Classes="primary"
+                                                        Click="OnStatsResetClick" />
+                                                <StackPanel Spacing="4">
+                                                    <TextBlock Text="Rodyti po"
+                                                               FontSize="12"
+                                                               Foreground="#475467" />
+                                                    <ComboBox x:Name="StatsPageSizeCombo"
+                                                              Width="140"
+                                                              SelectedIndex="2"
+                                                              SelectionChanged="OnStatsPageSizeChanged">
+                                                        <ComboBoxItem Content="50" />
+                                                        <ComboBoxItem Content="100" />
+                                                        <ComboBoxItem Content="200" />
+                                                        <ComboBoxItem Content="500" />
+                                                    </ComboBox>
+                                                </StackPanel>
+                                                <TextBlock x:Name="StatsResultCount"
+                                                           Text="Rezultatai: 0"
+                                                           Foreground="#0f172a"
+                                                           FontSize="13"
+                                                           Margin="0,8,0,0" />
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+
+                                    <Border Background="White"
+                                            BorderBrush="#e2e8f0"
+                                            BorderThickness="1"
+                                            CornerRadius="16"
+                                            Padding="12">
+                                        <StackPanel Spacing="8">
+                                            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                                                          MaxHeight="960">
+                                                <ItemsControl x:Name="StatsResultsList">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate x:DataType="local:MainWindow+StatsEntry">
+                                                            <Border Margin="0,6"
+                                                                    Padding="10"
+                                                                    Background="#f8fafc"
+                                                                    BorderBrush="#e2e8f0"
+                                                                    BorderThickness="1"
+                                                                    CornerRadius="10"
+                                                                    PointerPressed="OnStatsItemPointerPressed">
+                                                                <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="8">
+                                                                    <StackPanel Orientation="Horizontal"
+                                                                                VerticalAlignment="Center"
+                                                                                Spacing="6">
+                                                                        <TextBlock Text="{Binding FavoriteGlyph}"
+                                                                                   FontSize="16"
+                                                                                   Foreground="{Binding FavoriteBrush}"
+                                                                                   VerticalAlignment="Center" />
+                                                                        <StackPanel Spacing="4">
+                                                                            <TextBlock Text="{Binding InlineLine}"
+                                                                                       FontWeight="SemiBold"
+                                                                                       Foreground="#0f172a"
+                                                                                       TextWrapping="Wrap"
+                                                                                       TextTrimming="CharacterEllipsis" />
+                                                                            <TextBlock Text="{Binding OfferLabel}"
+                                                                                       Foreground="#475467"
+                                                                                       FontSize="12"
+                                                                                       TextWrapping="Wrap" />
+                                                                        </StackPanel>
+                                                                    </StackPanel>
+                                                                    <Button Grid.Column="2"
+                                                                            Content="Istorija"
+                                                                            HorizontalAlignment="Right"
+                                                                            VerticalAlignment="Center"
+                                                                            Padding="12,6"
+                                                                            Margin="0,0,4,0"
+                                                                            IsVisible="{Binding HasHistory}"
+                                                                            Tag="{Binding}"
+                                                                            Background="{Binding HistoryBackground}"
+                                                                            Foreground="{Binding HistoryForeground}"
+                                                                            Click="OnHistoryClick"
+                                                                            CornerRadius="999" />
+                                                                    <Button Grid.Column="3"
+                                                                            Content="Nuoroda"
+                                                                            HorizontalAlignment="Right"
+                                                                            VerticalAlignment="Center"
+                                                                            Padding="12,6"
+                                                                            Margin="0,0,4,0"
+                                                                            FontSize="14"
+                                                                            Background="#1d4ed8"
+                                                                            Foreground="White"
+                                                                            BorderThickness="0"
+                                                                            CornerRadius="999"
+                                                                            Tag="{Binding AdvertisementUrl}"
+                                                                            IsVisible="{Binding HasUrl}"
+                                                                            IsEnabled="{Binding HasUrl}"
+                                                                            Click="OnOpenListingClick" />
+                                                                    <StackPanel Grid.Column="4"
+                                                                                Spacing="4"
+                                                                                HorizontalAlignment="Right"
+                                                                                VerticalAlignment="Center">
+                                                                        <TextBlock Text="{Binding PricePerSquareChange}"
+                                                                                   Foreground="{Binding PricePerSquareChangeColor}"
+                                                                                   FontSize="12" />
+                                                                        <TextBlock Text="{Binding PriceChange}"
+                                                                                   Foreground="{Binding PriceChangeColor}"
+                                                                                   FontSize="12" />
+                                                                    </StackPanel>
+                                                                </Grid>
+                                                            </Border>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                            </ScrollViewer>
+
+                                            <StackPanel Orientation="Horizontal"
+                                                        HorizontalAlignment="Right"
+                                                        Spacing="8"
+                                                        VerticalAlignment="Center">
+                                                <TextBlock x:Name="StatsPageInfo"
+                                                           Text="Puslapis 1 / 1"
+                                                           VerticalAlignment="Center"
+                                                           Foreground="#0f172a" />
+                                                <StackPanel x:Name="StatsPaginationPanel"
+                                                            Orientation="Horizontal"
+                                                            Spacing="4"
+                                                            VerticalAlignment="Center" />
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+
+        <Border x:Name="BusyOverlay"
+                Background="#80000000"
+                IsVisible="False">
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="12">
+                <Border Background="White"
+                        CornerRadius="16"
+                        Padding="24 18"
+                        Opacity="0.95">
+                    <StackPanel Spacing="12"
+                                Width="320">
+                        <TextBlock x:Name="BusyTitle"
+                                   Text="Renkama informacija"
+                                   FontSize="20"
+                                   FontWeight="SemiBold"
+                                   Foreground="#0f172a"
+                                   HorizontalAlignment="Center" />
+                        <TextBlock x:Name="BusyDetails"
+                                   Text=""
+                                   FontSize="14"
+                                   Foreground="#1f2937"
+                                   TextAlignment="Center"
+                                   TextWrapping="Wrap" />
+                        <Button x:Name="ContinueButton"
+                                Content="Tęsti"
+                                HorizontalAlignment="Center"
+                                MinWidth="140"
+                                Margin="0,8,0,0"
+                                Classes="primary"
+                                IsVisible="False"
+                                Click="OnContinueButtonClick" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,301 @@
+2025-11-30 10:30:35 [INFO] Programa paleista.
+2025-11-30 10:30:35 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 10:30:35 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 10:30:35 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 10:30:35 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 10:30:35 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 10:30:36 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 10:30:36 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 10:30:36 [INFO] Langas atidarytas.
+2025-11-30 10:30:37 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 10:30:37 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 10:30:37 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 10:30:37 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:30:37 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 10:30:40 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 10:31:46 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-30 10:31:46 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:36:17 [INFO] Programa uzdaryta.
+2025-11-30 10:36:47 [INFO] Programa paleista.
+2025-11-30 10:36:47 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 10:36:47 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 10:36:47 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 10:36:47 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 10:36:47 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 10:36:47 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 10:36:47 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 10:36:47 [INFO] Langas atidarytas.
+2025-11-30 10:36:49 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 10:36:49 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 10:36:49 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 10:36:49 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:36:49 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 10:36:50 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 10:36:53 [INFO] Paspaustas mygtukas: Grafikas (palyginimo statistika).
+2025-11-30 10:38:45 [INFO] Programa uzdaryta.
+2025-11-30 10:39:34 [INFO] Programa paleista.
+2025-11-30 10:39:34 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 10:39:34 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 10:39:34 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 10:39:34 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 10:39:34 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 10:39:34 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 10:39:34 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 10:39:34 [INFO] Langas atidarytas.
+2025-11-30 10:39:36 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 10:39:36 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 10:39:36 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 10:39:36 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:39:36 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 10:39:37 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 10:39:42 [INFO] Paspaustas mygtukas: Grafikas (palyginimo statistika).
+2025-11-30 10:39:54 [INFO] Paspaustas mygtukas: Grafikas (palyginimo statistika).
+2025-11-30 10:39:55 [INFO] Paspaustas mygtukas: Grafikas (palyginimo statistika).
+2025-11-30 10:40:37 [INFO] Programa uzdaryta.
+2025-11-30 10:45:00 [INFO] Programa paleista.
+2025-11-30 10:45:00 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 10:45:00 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 10:45:00 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 10:45:00 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 10:45:00 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 10:45:00 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 10:45:00 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 10:45:00 [INFO] Langas atidarytas.
+2025-11-30 10:45:02 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 10:45:02 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 10:45:02 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 10:45:02 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:45:02 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 10:45:03 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 10:45:07 [INFO] Paspaustas mygtukas: Grafikas (palyginimo statistika).
+2025-11-30 10:45:12 [INFO] Programa uzdaryta.
+2025-11-30 10:45:12 [INFO] Programa uždaryta.
+2025-11-30 10:51:53 [INFO] Programa paleista.
+2025-11-30 10:51:53 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 10:51:53 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 10:51:53 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 10:51:53 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 10:51:53 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 10:51:53 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 10:51:53 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 10:51:53 [INFO] Langas atidarytas.
+2025-11-30 10:51:54 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 10:51:54 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 10:51:54 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 10:51:54 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 10:51:54 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 10:51:55 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 10:56:25 [INFO] Programa uzdaryta.
+2025-11-30 10:56:25 [INFO] Programa uždaryta.
+2025-11-30 11:04:53 [INFO] Programa paleista.
+2025-11-30 11:04:53 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 11:04:53 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 11:04:53 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 11:04:53 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 11:04:53 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 11:04:54 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 11:04:54 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 11:04:54 [INFO] Langas atidarytas.
+2025-11-30 11:04:57 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 11:04:57 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 11:04:57 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 11:04:57 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 11:04:57 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 11:04:58 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 11:08:30 [INFO] Programa uzdaryta.
+2025-11-30 11:08:30 [INFO] Programa uždaryta.
+2025-11-30 11:09:49 [INFO] Programa paleista.
+2025-11-30 11:09:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 11:09:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 11:09:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 11:09:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 11:09:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 11:09:49 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 11:09:49 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 11:09:49 [INFO] Langas atidarytas.
+2025-11-30 11:10:27 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 11:10:27 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 11:10:27 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 11:10:27 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 11:10:27 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 11:10:29 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 11:14:03 [INFO] Programa uzdaryta.
+2025-11-30 11:14:03 [INFO] Programa uždaryta.
+2025-11-30 11:14:25 [INFO] Programa paleista.
+2025-11-30 11:14:25 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 11:14:25 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 11:14:25 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 11:14:25 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 11:14:25 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 11:14:26 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 11:14:26 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 11:14:26 [INFO] Langas atidarytas.
+2025-11-30 11:14:27 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 11:14:27 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 11:14:27 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 11:14:27 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 11:14:27 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 11:14:28 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 11:16:44 [INFO] Programa uzdaryta.
+2025-11-30 11:21:49 [INFO] Programa paleista.
+2025-11-30 11:21:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 11:21:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 11:21:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 11:21:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 11:21:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 11:21:50 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 11:21:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 11:21:50 [INFO] Langas atidarytas.
+2025-11-30 11:21:51 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 11:21:51 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 11:21:51 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 11:21:51 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 11:21:51 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 11:21:52 [INFO] Paspaustas mygtukas: Palyginti statistika.
+2025-11-30 11:30:07 [INFO] Programa uzdaryta.
+2025-11-30 11:30:07 [INFO] Programa uždaryta.
+2025-11-30 19:43:07 [INFO] Programa paleista.
+2025-11-30 19:43:07 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-30 19:43:07 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-30 19:43:07 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-30 19:43:07 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-30 19:43:07 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-30 19:43:07 [INFO] Pagrindinis langas inicializuotas.
+2025-11-30 19:43:07 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-30 19:43:07 [INFO] Langas atidarytas.
+2025-11-30 19:43:10 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-30 19:43:10 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-30 19:43:17 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-30 19:43:18 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-30 19:43:31 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-30 19:43:52 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-30 19:43:53 [INFO] Puslapis 1: rasta 18 skelbimu.
+2025-11-30 19:44:34 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-30 19:45:16 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-30 19:45:57 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-30 19:46:39 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-30 19:47:20 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-30 19:48:02 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-30 19:48:44 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-30 19:48:48 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-30 19:49:29 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-30 19:50:11 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-30 19:50:53 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-30 19:50:56 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-30 19:51:38 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-30 19:52:19 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-30 19:52:23 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-11-30 19:53:04 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-11-30 19:53:46 [INFO] Puslapis 18: rasta 29 skelbimu.
+2025-11-30 19:54:28 [INFO] Puslapis 19: rasta 31 skelbimu.
+2025-11-30 19:55:10 [INFO] Puslapis 20: rasta 25 skelbimu.
+2025-11-30 19:55:51 [INFO] Puslapis 21: rasta 27 skelbimu.
+2025-11-30 19:56:33 [INFO] Puslapis 22: rasta 28 skelbimu.
+2025-11-30 19:57:14 [INFO] Puslapis 23: rasta 26 skelbimu.
+2025-11-30 19:57:56 [INFO] Puslapis 24: rasta 25 skelbimu.
+2025-11-30 19:58:37 [INFO] Puslapis 25: rasta 26 skelbimu.
+2025-11-30 19:59:19 [INFO] Puslapis 26: rasta 26 skelbimu.
+2025-11-30 20:00:01 [INFO] Puslapis 27: rasta 25 skelbimu.
+2025-11-30 20:00:04 [INFO] Puslapis 28: rasta 15 skelbimu.
+2025-11-30 20:00:04 [INFO] Surinkta 701 skelbimu. Pradedamas issaugojimas.
+2025-11-30 20:00:04 [INFO] Skelbimu issaugojimas baigtas. Nauji: 701, praleisti: 0.
+2025-11-30 20:00:18 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-30 20:00:20 [INFO] Paspaustas mygtukas: Statistika.
+2025-11-30 20:00:20 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-11-30 20:00:20 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-11-30 20:00:20 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-11-30 20:00:20 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-11-30 20:00:22 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-30 20:00:55 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-11-30 20:00:55 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-11-30 20:00:55 [INFO] Adresu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., kambariai: -)
+2025-11-30 20:00:55 [INFO] Kambariu sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -)
+2025-11-30 20:00:55 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-30 20:00:58 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-30 20:03:10 [INFO] Pasirinktas objekto tipas: Butai pardavimui
+2025-11-30 20:03:10 [INFO] Miestu sarasas atnaujintas (objektas: Butai pardavimui)
+2025-11-30 20:03:10 [INFO] Kambariu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -)
+2025-11-30 20:03:10 [INFO] Adresu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., kambariai: -)
+2025-11-30 20:03:10 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-11-30 20:03:11 [INFO] Paspaustas mygtukas: Rodyti naujausius.
+2025-11-30 20:03:54 [INFO] Paspaustas mygtukas: Rodyti atpigusius skelbimus.
+2025-11-30 20:06:57 [INFO] Pasirinkti kambariai: 2 (miestas: Klaipėdos m., objektas: Butai pardavimui)
+2025-11-30 20:06:57 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: 2)
+2025-11-30 20:06:59 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-30 20:06:59 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: 2)
+2025-11-30 20:07:29 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-11-30 20:07:29 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: 2)
+2025-11-30 20:10:39 [INFO] Paspaustas mygtukas: Rodyti pazymetus.
+2025-11-30 20:11:03 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-11-30 20:11:03 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-30 20:11:07 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-30 20:11:08 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-30 20:11:25 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-30 20:11:46 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-30 20:11:46 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-30 20:12:28 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-30 20:13:09 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-30 20:13:51 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-30 20:14:32 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-30 20:15:14 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-30 20:15:56 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-30 20:16:37 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-30 20:17:19 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-30 20:18:00 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-30 20:18:42 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-30 20:19:24 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-30 20:20:05 [INFO] Puslapis 13: rasta 16 skelbimu.
+2025-11-30 20:20:05 [INFO] Surinkta 316 skelbimu. Pradedamas issaugojimas.
+2025-11-30 20:20:05 [INFO] Skelbimu issaugojimas baigtas. Nauji: 316, praleisti: 0.
+2025-11-30 20:20:52 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-30 20:21:03 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-30 20:21:24 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-30 20:21:25 [INFO] Puslapis 1: rasta 12 skelbimu.
+2025-11-30 20:22:06 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-30 20:22:48 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-30 20:23:29 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-30 20:24:11 [INFO] Puslapis 5: rasta 24 skelbimu.
+2025-11-30 20:24:52 [INFO] Puslapis 6: rasta 24 skelbimu.
+2025-11-30 20:25:33 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-30 20:26:15 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-30 20:26:57 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-30 20:27:38 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-30 20:28:20 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-30 20:28:24 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-30 20:28:28 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-30 20:29:10 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-30 20:29:15 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-30 20:29:20 [INFO] Puslapis 16: rasta 27 skelbimu.
+2025-11-30 20:29:24 [INFO] Puslapis 17: rasta 27 skelbimu.
+2025-11-30 20:29:28 [INFO] Puslapis 18: rasta 25 skelbimu.
+2025-11-30 20:29:33 [INFO] Puslapis 19: rasta 26 skelbimu.
+2025-11-30 20:30:15 [INFO] Puslapis 20: rasta 26 skelbimu.
+2025-11-30 20:30:57 [INFO] Puslapis 21: rasta 25 skelbimu.
+2025-11-30 20:31:38 [INFO] Puslapis 22: rasta 25 skelbimu.
+2025-11-30 20:32:20 [INFO] Puslapis 23: rasta 25 skelbimu.
+2025-11-30 20:33:01 [INFO] Puslapis 24: rasta 25 skelbimu.
+2025-11-30 21:08:18 [INFO] Puslapis 25: rasta 25 skelbimu.
+2025-11-30 21:09:02 [INFO] Puslapis 26: rasta 26 skelbimu.
+2025-11-30 21:09:43 [INFO] Puslapis 27: rasta 25 skelbimu.
+2025-11-30 21:10:25 [INFO] Puslapis 28: rasta 25 skelbimu.
+2025-11-30 21:11:06 [INFO] Puslapis 29: rasta 20 skelbimu.
+2025-11-30 21:11:06 [INFO] Surinkta 712 skelbimu. Pradedamas issaugojimas.
+2025-11-30 21:11:06 [INFO] Skelbimu issaugojimas baigtas. Nauji: 711, praleisti: 1.
+2025-11-30 21:25:14 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-30 21:26:19 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-30 21:26:41 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-30 21:26:41 [INFO] Puslapis 1: rasta 12 skelbimu.
+2025-11-30 21:27:22 [INFO] Puslapis 2: rasta 22 skelbimu.
+2025-11-30 21:28:03 [INFO] Puslapis 3: rasta 12 skelbimu.
+2025-11-30 21:28:45 [INFO] Puslapis 4: rasta 1 skelbimu.
+2025-11-30 21:29:26 [INFO] Puslapis 5: rasta 11 skelbimu.
+2025-11-30 21:30:08 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-30 21:30:49 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-30 21:31:31 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-30 21:32:12 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-30 21:32:54 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-30 21:33:35 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-30 21:34:17 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-30 21:34:59 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-30 22:46:37 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-30 22:47:14 [INFO] Programa uždaryta.

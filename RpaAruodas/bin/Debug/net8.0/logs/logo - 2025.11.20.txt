@@ -1,0 +1,445 @@
+2025-11-20 10:21:52 [INFO] Programa paleista.
+2025-11-20 10:21:52 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 10:21:52 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 10:21:52 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 10:21:52 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 10:21:52 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 10:21:52 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 10:21:52 [INFO] Langas atidarytas.
+2025-11-20 10:21:55 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 10:22:02 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 10:22:03 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 10:22:18 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 10:22:39 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 10:22:40 [INFO] Puslapis 1: rasta 5 skelbimu.
+2025-11-20 10:22:40 [INFO] Surinkta 5 skelbimu. Pradedamas issaugojimas.
+2025-11-20 10:22:40 [INFO] Skelbimu issaugojimas baigtas. Nauji: 5, praleisti: 0.
+2025-11-20 10:22:49 [INFO] Programa uždaryta.
+2025-11-20 10:35:35 [INFO] Programa paleista.
+2025-11-20 10:35:35 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 10:35:35 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 10:35:35 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 10:35:35 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 10:35:35 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 10:35:35 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 10:35:35 [INFO] Langas atidarytas.
+2025-11-20 10:35:37 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 10:35:41 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 10:35:41 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 10:35:56 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 10:36:17 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 10:36:18 [INFO] Puslapis 1: rasta 18 skelbimu.
+2025-11-20 10:37:00 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 10:37:41 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 10:38:23 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 10:39:04 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 10:39:45 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-20 10:40:27 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-20 10:40:32 [INFO] Puslapis 8: rasta 26 skelbimu.
+2025-11-20 10:40:36 [INFO] Puslapis 9: rasta 30 skelbimu.
+2025-11-20 10:40:40 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-20 10:40:44 [INFO] Puslapis 11: rasta 12 skelbimu.
+2025-11-20 10:40:44 [INFO] Surinkta 261 skelbimu. Pradedamas issaugojimas.
+2025-11-20 10:40:44 [INFO] Skelbimu issaugojimas baigtas. Nauji: 261, praleisti: 0.
+2025-11-20 10:41:38 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 10:42:19 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 10:42:20 [INFO] Puslapis 1: rasta 0 skelbimu.
+2025-11-20 10:43:21 [INFO] Puslapis 2: rasta 0 skelbimu.
+2025-11-20 10:44:23 [INFO] Puslapis 3: rasta 0 skelbimu.
+2025-11-20 10:44:46 [INFO] Puslapis 4: rasta 0 skelbimu.
+2025-11-20 10:44:47 [INFO] Surinkta 0 skelbimu. Pradedamas issaugojimas.
+2025-11-20 10:44:47 [INFO] Skelbimu issaugojimas baigtas. Nauji: 0, praleisti: 0.
+2025-11-20 10:52:31 [INFO] Programa uždaryta.
+2025-11-20 10:53:27 [INFO] Programa paleista.
+2025-11-20 10:53:27 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 10:53:27 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 10:53:27 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 10:53:27 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 10:53:27 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 10:53:27 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 10:53:27 [INFO] Langas atidarytas.
+2025-11-20 10:53:29 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 10:53:34 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 10:53:34 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 10:53:52 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 10:54:13 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 10:54:14 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 10:54:55 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 10:55:37 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 10:56:18 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 10:57:00 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 10:57:41 [INFO] Puslapis 6: rasta 26 skelbimu.
+2025-11-20 10:58:23 [INFO] Puslapis 7: rasta 23 skelbimu.
+2025-11-20 10:58:23 [INFO] Surinkta 174 skelbimu. Pradedamas issaugojimas.
+2025-11-20 10:58:23 [INFO] Skelbimu issaugojimas baigtas. Nauji: 174, praleisti: 0.
+2025-11-20 10:59:45 [INFO] Programa uždaryta.
+2025-11-20 12:54:53 [INFO] Programa paleista.
+2025-11-20 12:54:53 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 12:54:53 [INFO] Playwright nustatytas headless=False (appsettings.json).
+2025-11-20 12:54:53 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 12:54:53 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 12:54:53 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 12:54:54 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 12:54:54 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 12:54:54 [INFO] Langas atidarytas.
+2025-11-20 12:54:57 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 12:55:01 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 12:55:01 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 12:55:03 [ERROR] Playwright veiksmas nesėkmingas. | TargetClosedException: Target page, context or browser has been closed
+2025-11-20 12:55:03 [ERROR] Kritinė klaida startuojant aplikaciją. | TargetClosedException: Target page, context or browser has been closed
+2025-11-20 12:55:03 [INFO] Programa uždaryta.
+2025-11-20 12:55:11 [INFO] Programa uzdaryta.
+2025-11-20 12:55:26 [INFO] Programa paleista.
+2025-11-20 12:55:26 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 12:55:26 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 12:55:26 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 12:55:26 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 12:55:26 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 12:55:27 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 12:55:27 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 12:55:27 [INFO] Langas atidarytas.
+2025-11-20 12:55:28 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 12:55:33 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 12:55:33 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 12:59:28 [INFO] Programa uždaryta.
+2025-11-20 13:14:31 [INFO] Programa paleista.
+2025-11-20 13:14:31 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 13:14:31 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 13:14:31 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 13:14:31 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 13:14:31 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 13:14:31 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 13:14:31 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 13:14:31 [INFO] Langas atidarytas.
+2025-11-20 13:14:33 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 13:14:38 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 13:14:38 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 13:14:58 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 13:15:19 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 13:15:19 [INFO] Puslapis 1: rasta 23 skelbimu.
+2025-11-20 13:16:01 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 13:16:06 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 13:16:47 [INFO] Puslapis 4: rasta 27 skelbimu.
+2025-11-20 13:17:29 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 13:18:11 [INFO] Puslapis 6: rasta 27 skelbimu.
+2025-11-20 13:18:52 [INFO] Puslapis 7: rasta 17 skelbimu.
+2025-11-20 13:18:52 [INFO] Surinkta 169 skelbimu. Pradedamas issaugojimas.
+2025-11-20 13:18:52 [INFO] Skelbimu issaugojimas baigtas. Nauji: 169, praleisti: 0.
+2025-11-20 13:22:10 [INFO] Programa uždaryta.
+2025-11-20 13:26:49 [INFO] Programa paleista.
+2025-11-20 13:26:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 13:26:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 13:26:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 13:26:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 13:26:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 13:26:50 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 13:26:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 13:26:50 [INFO] Langas atidarytas.
+2025-11-20 13:26:51 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 13:26:55 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 13:26:55 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 13:27:08 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 13:27:12 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 13:27:12 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 13:27:54 [INFO] Puslapis 2: rasta 16 skelbimu.
+2025-11-20 13:27:54 [INFO] Surinkta 41 skelbimu. Pradedamas issaugojimas.
+2025-11-20 13:27:54 [INFO] Skelbimu issaugojimas baigtas. Nauji: 41, praleisti: 0.
+2025-11-20 13:41:17 [INFO] Programa uždaryta.
+2025-11-20 13:41:26 [INFO] Programa paleista.
+2025-11-20 13:41:26 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 13:41:26 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 13:41:26 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 13:41:26 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 13:41:26 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 13:41:26 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 13:41:26 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 13:41:27 [INFO] Langas atidarytas.
+2025-11-20 13:41:29 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 13:41:31 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 13:41:31 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 13:41:49 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 13:42:10 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 13:42:11 [INFO] Puslapis 1: rasta 21 skelbimu.
+2025-11-20 13:42:52 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 13:43:34 [INFO] Puslapis 3: rasta 23 skelbimu.
+2025-11-20 13:43:40 [INFO] Programa uždaryta.
+2025-11-20 13:43:40 [ERROR] Playwright veiksmas nesėkmingas. | PlaywrightException: Target page, context or browser has been closed
+=========================== logs ===========================
+  "DOMContentLoaded" event fired
+  "Load" event fired
+============================================================
+2025-11-20 13:43:40 [ERROR] Skelbimu nuskaitymas nepavyko. | PlaywrightException: Target page, context or browser has been closed
+=========================== logs ===========================
+  "DOMContentLoaded" event fired
+  "Load" event fired
+============================================================
+2025-11-20 13:43:50 [INFO] Programa paleista.
+2025-11-20 13:43:50 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 13:43:50 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 13:43:50 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 13:43:50 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 13:43:50 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 13:43:50 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 13:43:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 13:43:50 [INFO] Langas atidarytas.
+2025-11-20 13:43:54 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 13:43:56 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 13:43:57 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 13:44:10 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 13:44:32 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 13:44:32 [INFO] Puslapis 1: rasta 24 skelbimu.
+2025-11-20 13:45:14 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 13:45:55 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 13:46:37 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 13:47:19 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 13:48:00 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-20 13:48:42 [INFO] Puslapis 7: rasta 27 skelbimu.
+2025-11-20 13:49:23 [INFO] Puslapis 8: rasta 26 skelbimu.
+2025-11-20 13:50:05 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-20 13:50:46 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-20 13:50:50 [INFO] Puslapis 11: rasta 10 skelbimu.
+2025-11-20 13:50:50 [INFO] Surinkta 262 skelbimu. Pradedamas issaugojimas.
+2025-11-20 13:50:50 [INFO] Skelbimu issaugojimas baigtas. Nauji: 262, praleisti: 0.
+2025-11-20 13:57:35 [INFO] Programa uždaryta.
+2025-11-20 14:14:51 [INFO] Programa paleista.
+2025-11-20 14:14:51 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 14:14:51 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 14:14:51 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 14:14:51 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 14:14:51 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 14:14:52 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 14:14:52 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 14:14:52 [INFO] Langas atidarytas.
+2025-11-20 14:14:54 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 14:14:59 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 14:14:59 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 14:15:17 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 14:15:38 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 14:15:39 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 14:16:21 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 14:17:02 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 14:17:44 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 14:18:25 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 14:19:07 [INFO] Puslapis 6: rasta 26 skelbimu.
+2025-11-20 14:19:48 [INFO] Puslapis 7: rasta 22 skelbimu.
+2025-11-20 14:19:48 [INFO] Surinkta 173 skelbimu. Pradedamas issaugojimas.
+2025-11-20 14:19:48 [INFO] Skelbimu issaugojimas baigtas. Nauji: 173, praleisti: 0.
+2025-11-20 14:21:58 [INFO] Programa uždaryta.
+2025-11-20 14:31:09 [INFO] Programa paleista.
+2025-11-20 14:31:09 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 14:31:09 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 14:31:09 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 14:31:09 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 14:31:09 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 14:31:09 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 14:31:09 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 14:31:09 [INFO] Langas atidarytas.
+2025-11-20 14:31:11 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 14:31:17 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 14:31:17 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 14:31:36 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 14:31:57 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 14:31:57 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 14:32:39 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 14:33:20 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 14:34:02 [INFO] Puslapis 4: rasta 17 skelbimu.
+2025-11-20 14:34:02 [INFO] Surinkta 92 skelbimu. Pradedamas issaugojimas.
+2025-11-20 14:34:02 [INFO] Skelbimu issaugojimas baigtas. Nauji: 92, praleisti: 0.
+2025-11-20 14:34:12 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 14:34:30 [INFO] Programa uždaryta.
+2025-11-20 15:01:59 [INFO] Programa paleista.
+2025-11-20 15:01:59 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 15:01:59 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 15:01:59 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 15:01:59 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 15:01:59 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 15:02:00 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 15:02:00 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 15:02:00 [INFO] Langas atidarytas.
+2025-11-20 15:02:06 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 15:02:12 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 15:02:12 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 15:02:32 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 15:02:53 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 15:02:54 [INFO] Puslapis 1: rasta 26 skelbimu.
+2025-11-20 15:03:35 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 15:03:39 [INFO] Puslapis 3: rasta 6 skelbimu.
+2025-11-20 15:03:39 [INFO] Surinkta 57 skelbimu. Pradedamas issaugojimas.
+2025-11-20 15:03:39 [INFO] Skelbimu issaugojimas baigtas. Nauji: 57, praleisti: 0.
+2025-11-20 15:09:18 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 15:09:20 [INFO] Programa uždaryta.
+2025-11-20 15:20:12 [INFO] Programa paleista.
+2025-11-20 15:20:12 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 15:20:12 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 15:20:12 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 15:20:12 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 15:20:12 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 15:20:12 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 15:20:12 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 15:20:12 [INFO] Langas atidarytas.
+2025-11-20 15:20:14 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 15:20:19 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 15:20:19 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 15:20:33 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 15:20:54 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 15:20:54 [INFO] Puslapis 1: rasta 9 skelbimu.
+2025-11-20 15:20:54 [INFO] Surinkta 9 skelbimu. Pradedamas issaugojimas.
+2025-11-20 15:20:54 [INFO] Skelbimu issaugojimas baigtas. Nauji: 9, praleisti: 0.
+2025-11-20 15:22:18 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 15:22:23 [INFO] Programa uždaryta.
+2025-11-20 15:23:00 [INFO] Programa paleista.
+2025-11-20 15:23:00 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 15:23:00 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 15:23:00 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 15:23:00 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 15:23:00 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 15:23:01 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 15:23:01 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 15:23:01 [INFO] Langas atidarytas.
+2025-11-20 15:23:02 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 15:23:06 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 15:23:06 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 15:23:27 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 15:23:48 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 15:23:49 [INFO] Puslapis 1: rasta 9 skelbimu.
+2025-11-20 15:23:49 [INFO] Surinkta 9 skelbimu. Pradedamas issaugojimas.
+2025-11-20 15:23:49 [INFO] Skelbimu issaugojimas baigtas. Nauji: 0, praleisti: 9.
+2025-11-20 15:24:55 [INFO] Programa uždaryta.
+2025-11-20 15:30:13 [INFO] Programa paleista.
+2025-11-20 15:30:14 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 15:30:14 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 15:30:14 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 15:30:14 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 15:30:14 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 15:30:14 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 15:30:14 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 15:30:14 [INFO] Langas atidarytas.
+2025-11-20 15:30:21 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 15:30:25 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 15:30:25 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 15:31:00 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 15:31:21 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 15:31:22 [INFO] Puslapis 1: rasta 24 skelbimu.
+2025-11-20 15:31:26 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 15:31:30 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 15:31:35 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 15:32:17 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 15:32:58 [INFO] Puslapis 6: rasta 26 skelbimu.
+2025-11-20 15:33:40 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-20 15:34:22 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-20 15:35:03 [INFO] Puslapis 9: rasta 26 skelbimu.
+2025-11-20 15:35:45 [INFO] Puslapis 10: rasta 26 skelbimu.
+2025-11-20 15:35:49 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-20 15:36:30 [INFO] Puslapis 12: rasta 1 skelbimu.
+2025-11-20 15:36:30 [INFO] Surinkta 278 skelbimu. Pradedamas issaugojimas.
+2025-11-20 15:36:30 [INFO] Skelbimu issaugojimas baigtas. Nauji: 278, praleisti: 0.
+2025-11-20 15:36:37 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 15:37:14 [INFO] Programa uždaryta.
+2025-11-20 15:57:56 [INFO] Programa paleista.
+2025-11-20 15:57:56 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 15:57:56 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 15:57:56 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 15:57:57 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 15:57:57 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 15:57:57 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 15:57:57 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 15:57:57 [INFO] Langas atidarytas.
+2025-11-20 15:58:00 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 15:58:05 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 15:58:06 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 15:58:30 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 15:58:33 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 15:58:34 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 15:58:38 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 15:58:41 [INFO] Puslapis 3: rasta 10 skelbimu.
+2025-11-20 15:58:41 [INFO] Surinkta 60 skelbimu. Pradedamas issaugojimas.
+2025-11-20 15:58:42 [INFO] Skelbimu issaugojimas baigtas. Nauji: 60, praleisti: 0.
+2025-11-20 15:59:12 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 15:59:47 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 16:00:08 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 16:00:08 [INFO] Puslapis 1: rasta 8 skelbimu.
+2025-11-20 16:00:08 [INFO] Surinkta 8 skelbimu. Pradedamas issaugojimas.
+2025-11-20 16:00:08 [INFO] Skelbimu issaugojimas baigtas. Nauji: 8, praleisti: 0.
+2025-11-20 16:00:13 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 16:05:22 [INFO] Programa uždaryta.
+2025-11-20 16:07:50 [INFO] Programa paleista.
+2025-11-20 16:07:50 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 16:07:50 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 16:07:50 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 16:07:50 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 16:07:50 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 16:07:51 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 16:07:51 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 16:07:51 [INFO] Langas atidarytas.
+2025-11-20 16:07:52 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 16:07:55 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 16:07:55 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 16:08:16 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 16:08:40 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 16:08:41 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 16:09:22 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 16:10:04 [INFO] Puslapis 3: rasta 10 skelbimu.
+2025-11-20 16:10:04 [INFO] Surinkta 60 skelbimu. Pradedamas issaugojimas.
+2025-11-20 16:10:34 [ERROR] Playwright veiksmas nesėkmingas. | SqliteException: SQLite Error 5: 'database is locked'.
+2025-11-20 16:10:34 [ERROR] Skelbimu nuskaitymas nepavyko. | SqliteException: SQLite Error 5: 'database is locked'.
+2025-11-20 16:10:46 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 16:11:12 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 16:11:33 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 16:11:33 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 16:11:38 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 16:11:41 [INFO] Puslapis 3: rasta 10 skelbimu.
+2025-11-20 16:11:41 [INFO] Surinkta 60 skelbimu. Pradedamas issaugojimas.
+2025-11-20 16:11:41 [INFO] Skelbimu issaugojimas baigtas. Nauji: 60, praleisti: 0.
+2025-11-20 16:11:45 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 16:12:30 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 16:12:51 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 16:12:51 [INFO] Puslapis 1: rasta 8 skelbimu.
+2025-11-20 16:12:51 [INFO] Surinkta 8 skelbimu. Pradedamas issaugojimas.
+2025-11-20 16:12:51 [INFO] Skelbimu issaugojimas baigtas. Nauji: 8, praleisti: 0.
+2025-11-20 16:12:55 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 16:13:33 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 16:13:54 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 16:13:55 [INFO] Puslapis 1: rasta 8 skelbimu.
+2025-11-20 16:13:55 [INFO] Surinkta 8 skelbimu. Pradedamas issaugojimas.
+2025-11-20 16:13:55 [INFO] Skelbimu issaugojimas baigtas. Nauji: 0, praleisti: 8.
+2025-11-20 16:13:58 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-11-20 16:14:02 [INFO] Programa uždaryta.
+2025-11-20 18:43:28 [INFO] Programa paleista.
+2025-11-20 18:43:28 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-20 18:43:28 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-11-20 18:43:28 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-20 18:43:28 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-20 18:43:28 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-20 18:43:29 [INFO] Pagrindinis langas inicializuotas.
+2025-11-20 18:43:29 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-20 18:43:29 [INFO] Langas atidarytas.
+2025-11-20 18:43:32 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-20 18:43:37 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-20 18:43:37 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-20 18:44:30 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-20 18:44:51 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-20 18:44:51 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-20 18:45:33 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-11-20 18:46:15 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-11-20 18:46:56 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-11-20 18:47:38 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-11-20 18:48:19 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-11-20 18:49:01 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-11-20 18:49:42 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-11-20 18:49:47 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-11-20 18:50:28 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-11-20 18:51:10 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-11-20 18:51:51 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-11-20 18:52:33 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-11-20 18:53:14 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-11-20 18:53:56 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-11-20 18:54:37 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-11-20 18:55:19 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-11-20 18:56:00 [INFO] Puslapis 18: rasta 25 skelbimu.
+2025-11-20 18:56:42 [INFO] Puslapis 19: rasta 25 skelbimu.
+2025-11-20 18:57:24 [INFO] Puslapis 20: rasta 26 skelbimu.
+2025-11-20 18:58:05 [INFO] Puslapis 21: rasta 25 skelbimu.
+2025-11-20 18:58:46 [INFO] Puslapis 22: rasta 2 skelbimu.
+2025-11-20 18:58:46 [INFO] Surinkta 528 skelbimu. Pradedamas issaugojimas.
+2025-11-20 18:58:46 [INFO] Skelbimu issaugojimas baigtas. Nauji: 524, praleisti: 4.
+2025-11-20 19:20:59 [INFO] Vartotojas tęsia darbą po RPA pabaigos.

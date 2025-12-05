@@ -1,0 +1,147 @@
+2025-12-04 12:37:49 [INFO] Programa paleista.
+2025-12-04 12:37:49 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-12-04 12:37:49 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-12-04 12:37:49 [INFO] Pradedamas SQLite inicializavimas.
+2025-12-04 12:37:49 [INFO] Listings table columns: Id (INTEGER), ExternalId (TEXT), CollectedOn (TEXT), SearchCity (TEXT), SearchObject (TEXT), MicroDistrict (TEXT), Address (TEXT), Price (TEXT), PricePerSquare (TEXT), Rooms (TEXT), AreaSquare (TEXT), AreaLot (TEXT), HouseState (TEXT), OfferType (TEXT), Intendances (TEXT), Floors (TEXT), AdvertisementUrl (TEXT), Selected (INTEGER), SearchCity_lc (TEXT), SearchObject_lc (TEXT), MicroDistrict_lc (TEXT), Address_lc (TEXT), Rooms_lc (TEXT), HouseState_lc (TEXT), PriceValue (REAL), PricePerSquareValue (REAL), AreaSquareValue (REAL), AreaLotValue (REAL)
+2025-12-04 12:37:49 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-12-04 12:37:49 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-12-04 12:37:50 [INFO] Pagrindinis langas inicializuotas.
+2025-12-04 12:37:50 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-12-04 12:37:50 [INFO] Langas atidarytas.
+2025-12-04 12:37:55 [INFO] Paspaustas mygtukas: Statistika.
+2025-12-04 12:37:55 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-12-04 12:37:55 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-12-04 12:37:55 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-12-04 12:37:55 [INFO] Mikrorajonu sarasas atnaujintas (objektas: -, miestas: -, kambariai: -)
+2025-12-04 12:37:55 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-12-04 12:37:56 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-12-04 12:37:56 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-12-04 12:38:31 [ERROR] Playwright veiksmas nesėkmingas. | TimeoutException: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.aruodas.lt/", waiting until "networkidle"
+2025-12-04 12:38:31 [ERROR] Nepavyko inicializuoti Aruodas.lt peržiūros. | TimeoutException: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.aruodas.lt/", waiting until "networkidle"
+2025-12-04 12:38:39 [INFO] Paspaustas mygtukas: Statistika.
+2025-12-04 12:38:39 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-12-04 12:38:39 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-12-04 12:38:39 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-12-04 12:38:39 [INFO] Mikrorajonu sarasas atnaujintas (objektas: -, miestas: -, kambariai: -)
+2025-12-04 12:38:39 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-12-04 12:38:43 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-12-04 12:38:43 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-12-04 12:38:51 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-12-04 12:38:51 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-12-04 12:39:04 [INFO] Paspaustas mygtukas: Statistika.
+2025-12-04 12:39:04 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-12-04 12:39:04 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-12-04 12:39:04 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-12-04 12:39:04 [INFO] Mikrorajonu sarasas atnaujintas (objektas: -, miestas: -, kambariai: -)
+2025-12-04 12:39:04 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-12-04 12:39:05 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-12-04 12:39:05 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-12-04 12:39:07 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-12-04 12:39:07 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-12-04 12:39:18 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-12-04 12:39:39 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-12-04 12:39:40 [INFO] Puslapis 1: rasta 19 skelbimu.
+2025-12-04 12:39:44 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-12-04 12:39:48 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-12-04 12:39:52 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-12-04 12:39:56 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-12-04 12:40:38 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-12-04 12:41:19 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-12-04 12:41:23 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-12-04 12:41:27 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-12-04 12:42:09 [INFO] Puslapis 10: rasta 25 skelbimu.
+2025-12-04 12:42:51 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-12-04 12:43:32 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-12-04 12:44:14 [INFO] Puslapis 13: rasta 25 skelbimu.
+2025-12-04 12:44:55 [INFO] Puslapis 14: rasta 25 skelbimu.
+2025-12-04 12:45:00 [INFO] Puslapis 15: rasta 25 skelbimu.
+2025-12-04 12:45:41 [INFO] Puslapis 16: rasta 25 skelbimu.
+2025-12-04 12:46:23 [INFO] Puslapis 17: rasta 25 skelbimu.
+2025-12-04 12:46:27 [INFO] Puslapis 18: rasta 25 skelbimu.
+2025-12-04 12:47:09 [INFO] Puslapis 19: rasta 27 skelbimu.
+2025-12-04 12:47:51 [INFO] Puslapis 20: rasta 27 skelbimu.
+2025-12-04 12:48:32 [INFO] Puslapis 21: rasta 30 skelbimu.
+2025-12-04 12:49:14 [INFO] Puslapis 22: rasta 27 skelbimu.
+2025-12-04 12:49:56 [INFO] Puslapis 23: rasta 26 skelbimu.
+2025-12-04 12:50:37 [INFO] Puslapis 24: rasta 26 skelbimu.
+2025-12-04 12:51:19 [INFO] Puslapis 25: rasta 25 skelbimu.
+2025-12-04 12:52:00 [INFO] Puslapis 26: rasta 25 skelbimu.
+2025-12-04 12:52:42 [INFO] Puslapis 27: rasta 25 skelbimu.
+2025-12-04 12:53:23 [INFO] Puslapis 28: rasta 19 skelbimu.
+2025-12-04 12:53:23 [INFO] Surinkta 701 skelbimu. Pradedamas issaugojimas.
+2025-12-04 12:53:23 [INFO] Skelbimu issaugojimas baigtas. Nauji: 701, praleisti: 0.
+2025-12-04 12:53:30 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-12-04 12:53:31 [INFO] Programa uždaryta.
+2025-12-04 17:37:46 [INFO] Programa paleista.
+2025-12-04 17:37:46 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-12-04 17:37:46 [INFO] Playwright nustatytas headless=True (appsettings.json).
+2025-12-04 17:37:46 [INFO] Pradedamas SQLite inicializavimas.
+2025-12-04 17:37:46 [INFO] Listings table columns: Id (INTEGER), ExternalId (TEXT), CollectedOn (TEXT), SearchCity (TEXT), SearchObject (TEXT), MicroDistrict (TEXT), Address (TEXT), Price (TEXT), PricePerSquare (TEXT), Rooms (TEXT), AreaSquare (TEXT), AreaLot (TEXT), HouseState (TEXT), OfferType (TEXT), Intendances (TEXT), Floors (TEXT), AdvertisementUrl (TEXT), Selected (INTEGER), SearchCity_lc (TEXT), SearchObject_lc (TEXT), MicroDistrict_lc (TEXT), Address_lc (TEXT), Rooms_lc (TEXT), HouseState_lc (TEXT), PriceValue (REAL), PricePerSquareValue (REAL), AreaSquareValue (REAL), AreaLotValue (REAL)
+2025-12-04 17:37:46 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-12-04 17:37:46 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-12-04 17:37:48 [INFO] Pagrindinis langas inicializuotas.
+2025-12-04 17:37:48 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-12-04 17:37:48 [INFO] Langas atidarytas.
+2025-12-04 17:37:50 [INFO] Paspaustas mygtukas: Aruodas.lt.
+2025-12-04 17:37:50 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-12-04 17:37:58 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-12-04 17:37:59 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-12-04 17:38:14 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-12-04 17:38:17 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-12-04 17:38:18 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-12-04 17:39:00 [INFO] Puslapis 2: rasta 25 skelbimu.
+2025-12-04 17:39:41 [INFO] Puslapis 3: rasta 25 skelbimu.
+2025-12-04 17:40:23 [INFO] Puslapis 4: rasta 25 skelbimu.
+2025-12-04 17:41:04 [INFO] Puslapis 5: rasta 25 skelbimu.
+2025-12-04 17:41:46 [INFO] Puslapis 6: rasta 25 skelbimu.
+2025-12-04 17:41:50 [INFO] Puslapis 7: rasta 25 skelbimu.
+2025-12-04 17:42:31 [INFO] Puslapis 8: rasta 25 skelbimu.
+2025-12-04 17:43:13 [INFO] Puslapis 9: rasta 25 skelbimu.
+2025-12-04 17:43:54 [INFO] Puslapis 10: rasta 27 skelbimu.
+2025-12-04 17:44:36 [INFO] Puslapis 11: rasta 25 skelbimu.
+2025-12-04 17:45:17 [INFO] Puslapis 12: rasta 25 skelbimu.
+2025-12-04 17:45:21 [INFO] Puslapis 13: rasta 13 skelbimu.
+2025-12-04 17:45:21 [INFO] Surinkta 315 skelbimu. Pradedamas issaugojimas.
+2025-12-04 17:45:21 [INFO] Skelbimu issaugojimas baigtas. Nauji: 315, praleisti: 0.
+2025-12-04 17:47:29 [INFO] Vartotojas tęsia darbą po RPA pabaigos.
+2025-12-04 17:47:31 [INFO] Paspaustas mygtukas: Statistika.
+2025-12-04 17:47:31 [INFO] Objektu sarasas atnaujintas (miestas: -)
+2025-12-04 17:47:31 [INFO] Miestu sarasas atnaujintas (objektas: -)
+2025-12-04 17:47:31 [INFO] Bukles sarasas atnaujintas (objektas: -, miestas: -, adresas: -, kambariai: -)
+2025-12-04 17:47:31 [INFO] Mikrorajonu sarasas atnaujintas (objektas: -, miestas: -, kambariai: -)
+2025-12-04 17:47:31 [INFO] Perjungta i statistikos vaizda. Chromium uzdarytas.
+2025-12-04 17:47:35 [INFO] Pasirinktas objekto tipas: Butai nuomai
+2025-12-04 17:47:35 [INFO] Miestu sarasas atnaujintas (objektas: Butai nuomai)
+2025-12-04 17:47:35 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -)
+2025-12-04 17:47:35 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: -, adresas: -, kambariai: -)
+2025-12-04 17:47:35 [INFO] Mikrorajonu sarasas atnaujintas (objektas: Butai nuomai, miestas: -, kambariai: -)
+2025-12-04 17:47:38 [INFO] Objektu sarasas atnaujintas (miestas: Klaipėdos m.)
+2025-12-04 17:47:38 [INFO] Pasirinktas miestas: Klaipėdos m.
+2025-12-04 17:47:38 [INFO] Adresu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-12-04 17:47:38 [INFO] Kambariu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -)
+2025-12-04 17:47:38 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-12-04 17:47:38 [INFO] Mikrorajonu sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., kambariai: -)
+2025-12-04 17:47:39 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-12-04 17:47:39 [INFO] Bukles sarasas atnaujintas (objektas: Butai nuomai, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-12-04 17:48:11 [INFO] Paspaustas mygtukas: Filtruoti pagal brangiausia.
+2025-12-04 17:48:11 [INFO] Sorting stats by price descending using 'ORDER BY (ResolvedPriceValue IS NULL), ResolvedPriceValue DESC, CollectedOn DESC, ExternalId DESC'.
+2025-12-04 17:48:25 [INFO] Paspaustas mygtukas: Filtruoti pagal pigiausia.
+2025-12-04 17:48:25 [INFO] Sorting stats by price ascending using 'ORDER BY (ResolvedPriceValue IS NULL), ResolvedPriceValue ASC, CollectedOn DESC, ExternalId DESC'.
+2025-12-04 17:49:00 [INFO] Pasirinktas objekto tipas: Butai pardavimui
+2025-12-04 17:49:00 [INFO] Miestu sarasas atnaujintas (objektas: Butai pardavimui)
+2025-12-04 17:49:00 [INFO] Kambariu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -)
+2025-12-04 17:49:00 [INFO] Adresu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., kambariai: -)
+2025-12-04 17:49:00 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-12-04 17:49:00 [INFO] Mikrorajonu sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., kambariai: -)
+2025-12-04 17:49:03 [INFO] Paspaustas mygtukas: Filtruoti.
+2025-12-04 17:49:03 [INFO] Bukles sarasas atnaujintas (objektas: Butai pardavimui, miestas: Klaipėdos m., adresas: -, kambariai: -)
+2025-12-04 17:49:03 [INFO] Sorting stats by price ascending using 'ORDER BY (ResolvedPriceValue IS NULL), ResolvedPriceValue ASC, CollectedOn DESC, ExternalId DESC'.
+2025-12-04 17:49:26 [INFO] Paspaustas mygtukas: Filtruoti pagal pigiausia.
+2025-12-04 17:49:26 [INFO] Sorting stats by price ascending using 'ORDER BY (ResolvedPriceValue IS NULL), ResolvedPriceValue ASC, CollectedOn DESC, ExternalId DESC'.
+2025-12-04 17:50:09 [INFO] Paspaustas mygtukas: Rodyti atpigusius skelbimus.
+2025-12-04 18:05:54 [INFO] Programa uždaryta.
+2025-12-04 18:05:54 [INFO] Programa uzdaryta.

@@ -1,0 +1,23 @@
+Programos aprašymas:
+
+- „NT Duomenys Studio“ leidžia naršyti „Aruodas.lt“ svetainę tiesiogiai iš programos lango ir vienu paspaudimu surinkti naujausius skelbimus į duomenų bazę.
+- Statistiniai mygtukai padeda peržiūrėti anksčiau surinktus skelbimus, filtruoti pagal miestą, objektą, adresą, kambarius ir kainas bei matyti kainų pokyčius.
+- Programoje automatiškai fiksuojami logai ir istorija, todėl visuomet matote, kada buvo atlikta paieška ir kiek naujų skelbimų įrašyta.
+
+Kaip naudotis:
+
+1. Paleiskite programą naudodami „dotnet run --project RpaAruodas“ arba atidarykite paruoštą vykdomąjį failą.
+2. Apatinėje kairėje pusėje paspauskite „Aruodas.lt“. Programos langas prisijungs prie svetainės ir rodys naršyklės vaizdą.
+3. Dabar naudokite paieškos laukus, kaip įprastai „Aruodas.lt“ svetainėje. Kai spaudžiate „Ieškoti“, programoje pasirodys uždengimas (blur) su pranešimu, kad vyksta duomenų rinkimas.
+4. Palaukite, kol rinkimas baigsis – tuomet atsivers suvestinė, kurioje pamatysite, kiek skelbimų rasta, kiek įrašyta ir kiek praleista. Paspaudus „Testi“ pratęsite darbą.
+5. Norėdami peržiūrėti jau surinktą informaciją, kairėje pusėje paspauskite „Statistika“. Atidarytame lange galite pasirinkti objektų tipą, miestą, adresą, kambarius, kainą, plotą ir kitus filtrus, kad sugrupuotumėte norimus įrašus.
+6. Priklausomi filtrai reiškia, kad pasirinkus miestą automatiškai pasikeičia objektų sąrašas, o išsirinkus adresą – tik tuomet pasirodo galimi kambarių variantai.
+7. Naudodami mygtukus „Rodyti naujausius“, „Rodyti pažymėtus“, „Rodyti atpigusius“ ir „Rodyti pabrangusius“ lengvai peržiūrėsite norimas grupes.
+8. Paspaudus „Istorija“ galite matyti vieno skelbimo kainų pokyčius, o „Grafikas“ parodo kainos linijinę raidą.
+9. Jei reikia palikti programą, tiesiog uždarykite langą – programa išsaugos visus logus ir duomenis bei išjungs naršyklę.
+
+Pastabos:
+
+- Jei Playwright pirmą kartą paleidžiamas, jis automatiškai atsisiųs naršyklę – tai gali užtrukti kelias minutes, bet rodoma informacija.
+- Duomenys saugomi faile „storage/ntduomenys.db“; jei reikia, galite jį perkelti, tačiau turite naują aplanką nurodyti „appsettings.json“ faile.
+- Visi veiksmai įrašomi į „logs“ katalogą (failai „logo - YYYY.MM.DD.txt“), todėl galite peržiūrėti istoriją ir klaidas bet kuriuo metu.

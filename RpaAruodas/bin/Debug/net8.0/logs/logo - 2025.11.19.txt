@@ -1,0 +1,32 @@
+2025-11-19 23:05:41 [INFO] Programa paleista.
+2025-11-19 23:05:41 [INFO] Konfigūracija nuskaityta iš appsettings.json.
+2025-11-19 23:05:41 [INFO] Pradedamas SQLite inicializavimas.
+2025-11-19 23:05:41 [INFO] SQLite DB paruosta (C:\VisualStudioProjects\NTDuomenys_3.0\RpaAruodas\bin\Debug\net8.0\storage/ntduomenys.db).
+2025-11-19 23:05:41 [INFO] Pradinės paslaugos sėkmingai inicijuotos.
+2025-11-19 23:05:41 [INFO] Pagrindinis langas inicializuotas.
+2025-11-19 23:05:41 [INFO] Pagrindinis langas paruotas vartotojui.
+2025-11-19 23:05:41 [INFO] Langas atidarytas.
+2025-11-19 23:05:43 [INFO] Pradedamas aruodas.lt įkėlimas Playwright pagalba.
+2025-11-19 23:05:45 [INFO] Playwright įkėlė https://www.aruodas.lt.
+2025-11-19 23:05:45 [INFO] Aruodas.lt interaktyvi peržiūra paruošta.
+2025-11-19 23:06:03 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-19 23:06:24 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-19 23:06:24 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-19 23:07:05 [INFO] Puslapis 2: rasta 6 skelbimu.
+2025-11-19 23:07:05 [INFO] Surinkta 31 skelbimu. Pradedamas issaugojimas.
+2025-11-19 23:07:05 [INFO] Skelbimu issaugojimas baigtas. Nauji: 31, praleisti: 0.
+2025-11-19 23:09:15 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-19 23:09:36 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-19 23:09:37 [INFO] Puslapis 1: rasta 25 skelbimu.
+2025-11-19 23:10:17 [INFO] Puslapis 2: rasta 6 skelbimu.
+2025-11-19 23:10:17 [INFO] Surinkta 31 skelbimu. Pradedamas issaugojimas.
+2025-11-19 23:10:18 [INFO] Skelbimu issaugojimas baigtas. Nauji: 0, praleisti: 31.
+2025-11-19 23:10:44 [INFO] Paspaustas Aruodas.lt 'Ieškoti' mygtuka.
+2025-11-19 23:11:05 [INFO] Pradedamas aruodas.lt skelbimu nuskaitymas.
+2025-11-19 23:11:06 [INFO] Puslapis 1: rasta 20 skelbimu.
+2025-11-19 23:11:49 [INFO] Puslapis 2: rasta 26 skelbimu.
+2025-11-19 23:12:30 [INFO] Puslapis 3: rasta 26 skelbimu.
+2025-11-19 23:13:11 [INFO] Puslapis 4: rasta 1 skelbimu.
+2025-11-19 23:13:11 [INFO] Surinkta 73 skelbimu. Pradedamas issaugojimas.
+2025-11-19 23:13:11 [INFO] Skelbimu issaugojimas baigtas. Nauji: 73, praleisti: 0.
+2025-11-19 23:14:29 [INFO] Programa uždaryta.
