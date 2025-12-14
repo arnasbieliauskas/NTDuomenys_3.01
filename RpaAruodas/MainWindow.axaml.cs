@@ -1673,15 +1673,17 @@ public partial class MainWindow : Window
 	private async void OnCompareStatsClick(object? sender, RoutedEventArgs e)
 	{
 		_logService.Info("Paspaustas mygtukas: Palyginti statistika.");
-		CompareModeSelectionWindow selection = new CompareModeSelectionWindow();
-		selection.CompareCitiesRequested += OnCompareModeWindowCompareCitiesRequested;
-		selection.CompareMicrodistrictsRequested += OnCompareModeWindowCompareMicrodistrictsRequested;
-		selection.Closed += (_, _) =>
-		{
-			selection.CompareCitiesRequested -= OnCompareModeWindowCompareCitiesRequested;
-			selection.CompareMicrodistrictsRequested -= OnCompareModeWindowCompareMicrodistrictsRequested;
-		};
-		selection.Show(this);
+			CompareModeSelectionWindow selection = new CompareModeSelectionWindow();
+			selection.CompareCitiesRequested += OnCompareModeWindowCompareCitiesRequested;
+			selection.CompareMicrodistrictsRequested += OnCompareModeWindowCompareMicrodistrictsRequested;
+			selection.CompareStreetsRequested += OnCompareModeWindowCompareStreetsRequested;
+			selection.Closed += (_, _) =>
+			{
+				selection.CompareCitiesRequested -= OnCompareModeWindowCompareCitiesRequested;
+				selection.CompareMicrodistrictsRequested -= OnCompareModeWindowCompareMicrodistrictsRequested;
+				selection.CompareStreetsRequested -= OnCompareModeWindowCompareStreetsRequested;
+			};
+			selection.Show(this);
 	}
 
 	private void OnCompareModeWindowCompareCitiesRequested(object? sender, EventArgs e)
@@ -1693,6 +1695,13 @@ public partial class MainWindow : Window
 	private void OnCompareModeWindowCompareMicrodistrictsRequested(object? sender, EventArgs e)
 	{
 		CompareMicrodistrictsWindow dialog = new CompareMicrodistrictsWindow(_databaseService, _logService);
+		dialog.Show(this);
+	}
+
+	private void OnCompareModeWindowCompareStreetsRequested(object? sender, EventArgs e)
+	{
+		_logService.Info("Paspaustas mygtukas: Palyginti gatves.");
+		CompareStatsWindow dialog = new CompareStatsWindow(_databaseService, _logService);
 		dialog.Show(this);
 	}
 
@@ -2978,6 +2987,8 @@ public partial class MainWindow : Window
 
 			public event EventHandler? CompareMicrodistrictsRequested;
 
+			public event EventHandler? CompareStreetsRequested;
+
 			public CompareModeSelectionWindow()
 			{
 				base.Title = "Palyginimo modulis";
@@ -3001,17 +3012,23 @@ public partial class MainWindow : Window
 					Foreground = new SolidColorBrush(Color.Parse("#0f172a"))
 				};
 
-				Button compareCitiesButton = CreateModeButton("Palyginti miestus");
-				compareCitiesButton.Click += (_, _) =>
-				{
-					CompareCitiesRequested?.Invoke(this, EventArgs.Empty);
-				};
+			Button compareCitiesButton = CreateModeButton("Palyginti miestus");
+			compareCitiesButton.Click += (_, _) =>
+			{
+				CompareCitiesRequested?.Invoke(this, EventArgs.Empty);
+			};
 
-				Button compareMicrodistrictsButton = CreateModeButton("Palyginti mikrorajonus");
-				compareMicrodistrictsButton.Click += (_, _) =>
-				{
-					CompareMicrodistrictsRequested?.Invoke(this, EventArgs.Empty);
-				};
+			Button compareStreetsButton = CreateModeButton("Palyginti gatves");
+			compareStreetsButton.Click += (_, _) =>
+			{
+				CompareStreetsRequested?.Invoke(this, EventArgs.Empty);
+			};
+
+			Button compareMicrodistrictsButton = CreateModeButton("Palyginti mikrorajonus");
+			compareMicrodistrictsButton.Click += (_, _) =>
+			{
+				CompareMicrodistrictsRequested?.Invoke(this, EventArgs.Empty);
+			};
 
 				StackPanel buttons = new StackPanel
 				{
@@ -3019,6 +3036,7 @@ public partial class MainWindow : Window
 					Children =
 					{
 						compareCitiesButton,
+						compareStreetsButton,
 						compareMicrodistrictsButton
 					}
 				};
