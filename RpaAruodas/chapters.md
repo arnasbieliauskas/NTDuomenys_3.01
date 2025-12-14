@@ -199,6 +199,12 @@
 
 # Chapter 38 - Statistikų puslapiavimas
 
+# Chapter 70 - Du vieniši watermark kiekvienam intervalui
+
+1. `UpdateRangePlaceholdersAsync` dabar pasiūlo atskirus „nuo …“ ir „iki …“ tekstus m², sklypo (a), kainos ir €/m² intervalams, o kiekvienam lauko poros langeliui priskiriamas tik atitinkamas placeholder (be jokios papildomos logikos/Klausimų pakeitimų).
+2. Pridėtas naujas `BuildRangePlaceholders` pagalbinis metodas, kuris grąžina tuple’ą `(From, To)` su lietuviškais „nuo/iki“ tekstais, laikantis ankstesnio skaičių formatavimo ir vienetų simbolių.
+3. `ApplyRangeWatermarks` dabar priima atskirus placeholderius kiekvienam TextBox’ui ir `ClearRangePlaceholders` jas išvalo vieną po kito, todėl išlaikytas vokiečių atrodymas, o vandens ženklai nebeperrašomi viena eilute.
+
 1. Statistikoje pridėtas pasirenkamas įrašų skaičius (50/100/200/500) ir puslapių skaitiklis „Puslapis X / Y“.
 2. Puslapiavimas matomas numeru juostoje su rodyklėmis ir ellipsis.
 3. Kiekvienas pasirinkimas resetina į 1 puslapį, navigacija įjungiama tik kai yra duomenų.
@@ -375,7 +381,64 @@
 1. Pridėtas atskiras „Palyginti mikrorajonus“ langas su objekto tipo, miesto/gyvenvietės, mikrorajono ir datų laukelių grupe, kad būtų galima tiksliai taikyti nuoseklias „palyginti pagal“ taisykles (vidutinė kaina, €/m²).
 2. Mygtukas „Grafikas“ paleidžia tą pačią diagramos logiką kaip bendrame „Palyginti statistika“ lange, įskaitant microdistrict filtrą, o rezultatai parodo tik pasirinktą miestą su pasirinktais kriterijais, kad vartotojas galėtų palyginti konkrečius mikrorajonų duomenis.
 
-# Chapter 65 - Diagramų langų stumdymas
+# Chapter 65 - Diagramu langu stumdymas
 
-1. Visi palyginimo grafikai naudoja bendrą lango savininko/aktyvavimo logiką (`chartOwner` ir `EnableWindowActivationOnClick`), todėl jie nebėra visada viršuje ir respektuoja vartotojo pasirinkimą paspaudus kitą atidarytą langą.
-2. Statistikos lango grafikai vėl gali būti iškeliami į priekinį planą taip pat, kaip mikrorajonų grafikas, todėl vartotojui nebereikia uždarinėti dialogų ar refokusavimo.
+1. Visi palyginimo grafikai naudoja bendra lango savininko/aktyvavimo logika (`chartOwner` ir `EnableWindowActivationOnClick`), todel jie nebera visada virsuje ir respektuoja vartotojo pasirinkima paspaudus kita atidaryta langa.
+2. Statistikos lango grafikai vel gali buti iskeliami i priekini plana taip pat, kaip mikrorajonu grafikas, todel vartotojui nebereikia uzdarineti dialogu ar refokusavimo.
+3. Palyginimo grafiko langai dabar leidzia vartotojui drag-resizuoti jų dydį (CanResize = true, SizeToContent nebespaudzia ir nustatytas pradinias 760×520 dydis su minimaliomis ribomis), tad grafikai gali užimti norimą ekrano vietą.
+
+# Chapter 66 - Kainos filtrai ir grafiko antraste
+
+1. `AddNumericRangeFilter` dabar naudoja `l.PriceValue`, `l.PricePerSquareValue`, `l.AreaSquareValue` ir `l.AreaLotValue`, todel SQL filtrai sukelia statistikines uzklausas tik per `LatestListings` CTE ir nebekelia "ambiguous column name" klaidos.
+2. Palyginimo grafiko antraste formuojama dinamiski: kai pasirenkamas objekto tipas ji rodo "Palyginimo grafikas - (objekto tipas)", o be pasirinkimo lieka tiesiog "Palyginimo grafikas", kad vartotojui butu aisku, kokie duomenys zymimi.
+
+# Chapter 67 - Flex grafikas
+
+1. Palyginimo grafiko langas dabar pritaikytas `Viewbox` skalavimui, todel legenda, ašys ir linijos dinamiškai masteliuojamos, kai langas resizuojamas, ir netampa apkarpytos nei neproporcingai didelės.
+2. Grafikas paliktas kaip resizuojamas dialogas (`CanResize=true`, `SizeToContent=Manual`), o pradinis dydis/min/max nurodyti 760×520/520/360, kad pradinis vaizdas būtų aiškus, bet vartotojas galėtų lengvai išplėsti ar susiaurinti diagramą.
+3. Palyginti statistika ir Palyginti mikrorajonus dialogai taip pat dabar yra resizuojami ir jų turinys apgultas `Viewbox`, kad filtrų UI mastelis keistųsi kartu su langu be apkarpymo.
+
+# Chapter 68 - Chart Window Responsiveness (ChartControl & Smaller Min Size)
+
+1. Background / Problem � the earlier comparison chart relied on a Canvas inside a ScrollViewer, so shrinking the window either clipped axes/labels or let scrollbars overlap the right/bottom edges; fixed window minimums (~640�420) also blocked further reduction.
+2. Solution Summary � replaced the canvas with a responsive ChartControl that renders axes, grid, ticks, lines, and markers directly into its Bounds, invalidating on resize instead of reflowing scroll math; chart window minimums now come from the lighter AppConfiguration.Window defaults (~400�300) and the local dialog min was halved (�320�210) so the plot can shrink about 50% more while still showing everything.
+3. Files & Key Changes � RpaAruodas/Controls/ChartControl.cs now owns the drawing surface and redraws cleanly when its Bounds change; RpaAruodas/MainWindow.axaml.cs injects the control in ShowLineChartAsync, invalidates it on resize/Opened, and drops the ScrollViewer/scroll-inset logic; configuration-driven minima live in RpaAruodas/Configuration/AppConfiguration.cs.
+4. Before / After Behavior � before, resizing the comparison chart showed scrollbars that covered the rightmost grid line and window minima prevented tight layouts; after, ChartControl simply scales the plot, axes, and markers, and the window can shrink to the new softer minimum while legend colors/data remain untouched.
+5. How to Test � open a comparison chart, drag it down to the new minimal size (�320�210), and verify axes/ticks remain visible with no overlapping scrollbars; repeatedly resize large ? small and change legend colors to ensure the redraw preserves the new hues.
+6. Operational Notes � business logic, filters, and data access remain untouched; ChartControl is the place to add future tweaks (tick density, panning/zoom).
+7. Rollback � revert to the commit that used the Canvas+ScrollViewer chart and the earlier window minima in AppConfiguration.Window and ShowLineChartAsync.
+
+
+## Chapter 69 � Main Window Responsiveness (Layout, Scroll Padding, Safer Selections)
+
+### Background / Problem
+1. The Stats area could hide behind scrollbars when the window was small because filter blocks used fixed widths and the results ScrollViewer had no padding for emerging bars. SelectionChanged handlers also fired while async option lists were refilling, which occasionally caused jittery UI states. The browser preview forced its bitmap dimensions onto the layout, and the default minima kept the window larger than desired.
+
+### Solution Summary
+1. The Stats panel is now a three-row Grid (title/filters/results) so every row can shrink or stretch with the window while filters drop fixed widths.
+2. The results ScrollViewer adds padding on the right/bottom when its scrollbars appear, keeping content visible and untouched.
+3. SelectionChanged handlers are attached after ItemsSource assignments and wrapped with the suppression flag so async updates don�t cascade. The preview image now simply updates its Source so it stretches with the layout.
+4. The app minima were softened (640�420) to match the lighter thresholds used by the ChartControl work from Chapter 68.
+
+### Files & Key Changes
+1. RpaAruodas/MainWindow.axaml: new three-row layout and stretchy combos/buttons instead of fixed widths, plus the padded results viewer row (~170, ~448).
+2. RpaAruodas/MainWindow.axaml.cs: wires SelectionChanged after ItemsSource, handles ScrollViewer.ScrollChanged for inset padding, and removes forced bitmap sizing in UpdateImageAsync (~1100, ~1254, ~1726).
+3. RpaAruodas/Configuration/AppConfiguration.cs: defaults now use 640�420 minima (line 15).
+4. RpaAruodas/appsettings.json: persisted MinWidth/MinHeight = 640�420 (line 6).
+5. (Context) RpaAruodas/Controls/ChartControl.cs: chart already renders to bounds so the Main window follows the same responsive philosophy described in Chapter 68.
+
+### Before / After
+1. Before: filters hid under scrollbars when shrinking, selection events triggered during async repopulation, preview pushed fixed dimensions, and the window couldn�t shrink far enough.
+2. After: filters stay visible even with scrollbars, selection handlers respect suppression, the preview stretches with its container, and the main window honors the softer minima while remaining usable.
+
+### How to Test
+1. Open the main Stats view and shrink the window horizontally/vertically�every filter input stays visible, scrollbars pad themselves, and the results list scrolls without overlay.
+2. Rapidly change Object/City/Rooms/Microdistrict filters while their options reload; no cascading selection glitches occur.
+3. Trigger the browser preview and confirm the image scales responsively instead of imposing fixed dimensions.
+
+### Operational Notes
+1. No database, query, or business logic changes were made�this is layout/responsiveness and event-wiring hardening aligned with the ChartControl modernization of Chapter 68.
+
+### Rollback
+1. Revert the XAML/code-behind updates listed above and restore the prior app minimums to undo the responsive layout and scroll padding changes.
+

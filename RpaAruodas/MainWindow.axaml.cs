@@ -35,6 +35,7 @@ using Avalonia.VisualTree;
 using CompiledAvaloniaXaml;
 using RpaAruodas.Configuration;
 using RpaAruodas.Services;
+using RpaAruodas.Controls;
 
 namespace RpaAruodas;
 
@@ -369,9 +370,9 @@ public partial class MainWindow : Window
 			base.Width = 1120.0;
 			base.Height = 420.0;
 			base.Background = new SolidColorBrush(Color.Parse("#f6f7fb"));
-			base.Title = "Palyginti statistika";
+			base.Title = "Palyginti statistiką";
 			base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-			base.CanResize = false;
+			base.CanResize = true;
 			CompareStyleRegistry.Apply(base.Styles);
 			EnableWindowActivationOnClick(this);
 			base.Content = BuildContent();
@@ -617,7 +618,7 @@ public partial class MainWindow : Window
 				{
 					(Control)new TextBlock
 					{
-						Text = "Miestas / gyvenviete",
+						Text = "Miestas / Gyvenvietė",
 						FontSize = 16.0,
 						Foreground = new SolidColorBrush(Color.Parse("#475467"))
 					},
@@ -1589,7 +1590,7 @@ public partial class MainWindow : Window
 
 	private async void OnStatsResetClick(object? sender, RoutedEventArgs e)
 	{
-		_logService.Info("Paspaustas mygtukas: Isvalyti.");
+		_logService.Info("Paspaustas mygtukas: Išvalyti.");
 		await ResetStatsUiAsync(reloadFilters: true, collapseAdvanced: true);
 	}
 
@@ -1609,7 +1610,7 @@ public partial class MainWindow : Window
 
 	private void OnShowMarkedClick(object? sender, RoutedEventArgs e)
 	{
-		_logService.Info("Paspaustas mygtukas: Rodyti pazymetus.");
+		_logService.Info("Paspaustas mygtukas: Rodyti pažymėtus.");
 		_showOnlyFavorites = true;
 		_showOnlyWithoutHistory = false;
 		_showOnlyPriceDrop = false;
@@ -1651,7 +1652,7 @@ public partial class MainWindow : Window
 
 	private async void OnSortByHighestPriceClick(object? sender, RoutedEventArgs e)
 	{
-		_logService.Info("Paspaustas mygtukas: Filtruoti pagal brangiausia.");
+		_logService.Info("Paspaustas mygtukas: Filtruoti pagal brangiausią.");
 		_sortByPriceDescending = true;
 		_sortByPriceAscending = false;
 		_statsPageIndex = 1;
@@ -1661,7 +1662,7 @@ public partial class MainWindow : Window
 
 	private async void OnSortByLowestPriceClick(object? sender, RoutedEventArgs e)
 	{
-		_logService.Info("Paspaustas mygtukas: Filtruoti pagal pigiausia.");
+		_logService.Info("Paspaustas mygtukas: Filtruoti pagal pigiausią.");
 		_sortByPriceAscending = true;
 		_sortByPriceDescending = false;
 		_statsPageIndex = 1;
@@ -1752,12 +1753,11 @@ public partial class MainWindow : Window
 			string obj = NormalizeSelection(_statsObjectCombo.SelectedItem as string);
 			_logService.Info("Pasirinktas miestas: " + (city ?? "-"));
 			await EnsureAddressOptionsAsync(obj, city, room);
-			_statsAddressCombo.SelectedIndex = -1;
 			await EnsureRoomOptionsAsync(obj, city, null);
 			await EnsureHouseStateOptionsAsync();
 			string updatedRoom = NormalizeSelection(_statsRoomsCombo.SelectedItem as string);
 			await EnsureMicroDistrictOptionsAsync(obj, city, updatedRoom);
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
@@ -1776,7 +1776,7 @@ public partial class MainWindow : Window
 			await EnsureAddressOptionsAsync(obj, city, room);
 			await EnsureHouseStateOptionsAsync();
 			await EnsureMicroDistrictOptionsAsync(obj, city, room);
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
@@ -1790,7 +1790,7 @@ public partial class MainWindow : Window
 			_logService.Info($"Pasirinktas adresas: {address ?? "-"} (miestas: {city ?? "-"})");
 			await EnsureRoomOptionsAsync(obj, city, address);
 			await EnsureHouseStateOptionsAsync();
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
@@ -1802,9 +1802,10 @@ public partial class MainWindow : Window
 			string city = NormalizeSelection(_statsCityCombo.SelectedItem as string);
 			string obj = NormalizeSelection(_statsObjectCombo.SelectedItem as string);
 			_logService.Info($"Pasirinkti kambariai: {room ?? "-"} (miestas: {city ?? "-"}, objektas: {obj ?? "-"})");
+			await EnsureAddressOptionsAsync(obj, city, room);
 			await EnsureHouseStateOptionsAsync();
 			await EnsureMicroDistrictOptionsAsync(obj, city, room);
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
@@ -1815,17 +1816,17 @@ public partial class MainWindow : Window
 			string? microDistrict = NormalizeSelection(_statsMicroDistrictCombo.SelectedItem as string);
 			_logService.Info("Pasirinktas mikrorajonas: " + (microDistrict ?? "-"));
 			await EnsureHouseStateOptionsAsync();
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
-	private void OnStatsHouseStateSelectionChanged(object? sender, SelectionChangedEventArgs e)
+	private async void OnStatsHouseStateSelectionChanged(object? sender, SelectionChangedEventArgs e)
 	{
 		if (!_suppressFilterSelection)
 		{
 			string text = NormalizeSelection(_statsHouseStateCombo.SelectedItem as string);
 			_logService.Info("Pasirinkta būklė: " + (text ?? "-"));
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 	}
 
@@ -1854,7 +1855,7 @@ public partial class MainWindow : Window
 			await EnsureAddressOptionsAsync(null, null, null);
 			await EnsureHouseStateOptionsAsync();
 			await EnsureMicroDistrictOptionsAsync(null, null, null);
-			UpdateAreaWatermarksAsync();
+			await UpdateRangePlaceholdersAsync();
 		}
 		catch (Exception ex)
 		{
@@ -1903,12 +1904,36 @@ public partial class MainWindow : Window
 		_advancedSearchToggleButton.Content = (isVisible ? "Slėpti išplėstinę paiešką" : "Išplėstinė paieška");
 	}
 
-	private void OnAdvancedSearchToggleClick(object? sender, RoutedEventArgs e)
+	private async void OnAdvancedSearchToggleClick(object? sender, RoutedEventArgs e)
 	{
 		ToggleAdvancedSearch(!_isAdvancedSearchVisible);
+		if (_isAdvancedSearchVisible)
+		{
+			await RefreshAdvancedSearchAsync();
+		}
 	}
 
-	private async Task ResetStatsUiAsync(bool reloadFilters, bool collapseAdvanced = false)
+	private async Task RefreshAdvancedSearchAsync()
+	{
+		string? obj = NormalizeSelection(_statsObjectCombo.SelectedItem as string);
+		string? city = NormalizeSelection(_statsCityCombo.SelectedItem as string);
+		string? rooms = NormalizeSelection(_statsRoomsCombo.SelectedItem as string);
+		if (obj == null && city == null && rooms == null)
+		{
+			return;
+		}
+		try
+		{
+			await EnsureAddressOptionsAsync(obj, city, rooms);
+			await UpdateRangePlaceholdersAsync();
+		}
+		catch (Exception ex)
+		{
+			_logService.Error("Nepavyko atnaujinti išplėstinės paieškos duomenų.", ex);
+		}
+	}
+
+ 	private async Task ResetStatsUiAsync(bool reloadFilters, bool collapseAdvanced = false)
 	{
 		_statsObjectCombo.SelectedIndex = -1;
 		_statsCityCombo.SelectedIndex = -1;
@@ -1948,7 +1973,7 @@ public partial class MainWindow : Window
 		{
 			await EnsureStatsFiltersAsync();
 		}
-		UpdateAreaWatermarksAsync();
+		await UpdateRangePlaceholdersAsync();
 	}
 
 	private void UpdatePaginationUi()
@@ -2358,7 +2383,7 @@ public partial class MainWindow : Window
 		}
 	}
 
-	private async Task UpdateAreaWatermarksAsync()
+	private async Task UpdateRangePlaceholdersAsync()
 	{
 		try
 		{
@@ -2372,48 +2397,121 @@ public partial class MainWindow : Window
 			bool hasTypedRanges = !string.IsNullOrWhiteSpace(_statsAreaFrom.Text) || !string.IsNullOrWhiteSpace(_statsAreaTo.Text) || !string.IsNullOrWhiteSpace(_statsAreaLotFrom.Text) || !string.IsNullOrWhiteSpace(_statsAreaLotTo.Text) || !string.IsNullOrWhiteSpace(_statsPriceFrom.Text) || !string.IsNullOrWhiteSpace(_statsPriceTo.Text) || !string.IsNullOrWhiteSpace(_statsPricePerSqFrom.Text) || !string.IsNullOrWhiteSpace(_statsPricePerSqTo.Text);
 			if (!hasSelection && !hasTypedRanges)
 			{
-				_statsPriceFrom.Watermark = null;
-				_statsPriceTo.Watermark = null;
-				_statsPricePerSqFrom.Watermark = null;
-				_statsPricePerSqTo.Watermark = null;
-				_statsAreaFrom.Watermark = null;
-				_statsAreaTo.Watermark = null;
-				_statsAreaLotFrom.Watermark = null;
-				_statsAreaLotTo.Watermark = null;
+				ClearRangePlaceholders();
 				return;
 			}
 			var (priceMin, priceMax) = await _databaseService.GetPriceBoundsAsync(obj, city, microDistrict, address, rooms, state, CancellationToken.None);
 			var (pricePerMin, pricePerMax) = await _databaseService.GetPricePerSquareBoundsAsync(obj, city, microDistrict, address, rooms, state, CancellationToken.None);
 			var (min, max) = await _databaseService.GetAreaBoundsAsync(obj, city, microDistrict, address, rooms, state, CancellationToken.None);
 			var (lotMin, lotMax) = await _databaseService.GetAreaLotBoundsAsync(obj, city, microDistrict, address, rooms, state, CancellationToken.None);
-			_statsPriceFrom.Watermark = (priceMin.HasValue ? FormatNumber(priceMin.Value) : null);
-			_statsPriceTo.Watermark = (priceMax.HasValue ? FormatNumber(priceMax.Value) : null);
-			_statsPricePerSqFrom.Watermark = (pricePerMin.HasValue ? FormatNumber(pricePerMin.Value) : null);
-			_statsPricePerSqTo.Watermark = (pricePerMax.HasValue ? FormatNumber(pricePerMax.Value) : null);
-			_statsAreaFrom.Watermark = (min.HasValue ? FormatNumber(min.Value) : null);
-			_statsAreaTo.Watermark = (max.HasValue ? FormatNumber(max.Value) : null);
-			_statsAreaLotFrom.Watermark = (lotMin.HasValue ? FormatNumber(lotMin.Value) : null);
-			_statsAreaLotTo.Watermark = (lotMax.HasValue ? FormatNumber(lotMax.Value) : null);
+			var pricePlaceholders = BuildRangePlaceholders(priceMin, priceMax, "€");
+			var pricePerSqPlaceholders = BuildRangePlaceholders(pricePerMin, pricePerMax, "€/m²");
+			var areaPlaceholders = BuildRangePlaceholders(min, max, "m²");
+			var lotPlaceholders = BuildRangePlaceholders(lotMin, lotMax, "a");
+			LogRangePlaceholders(BuildRangePlaceholder(priceMin, priceMax, "€"), BuildRangePlaceholder(pricePerMin, pricePerMax, "€/m²"), BuildRangePlaceholder(min, max, "m²"), BuildRangePlaceholder(lotMin, lotMax, "a"));
+			ApplyRangeWatermarks(pricePlaceholders, pricePerSqPlaceholders, areaPlaceholders, lotPlaceholders);
 		}
 		catch (Exception ex)
 		{
 			Exception ex2 = ex;
 			Exception ex3 = ex2;
-			_logService.Error("Nepavyko atnaujinti filtr\ufffd rib\ufffd.", ex3);
-			_statsPriceFrom.Watermark = null;
-			_statsPriceTo.Watermark = null;
-			_statsPricePerSqFrom.Watermark = null;
-			_statsPricePerSqTo.Watermark = null;
-			_statsAreaFrom.Watermark = null;
-			_statsAreaTo.Watermark = null;
-			_statsAreaLotFrom.Watermark = null;
-			_statsAreaLotTo.Watermark = null;
+			_logService.Error("Nepavyko atnaujinti filtrų ribų.", ex3);
+			ClearRangePlaceholders();
 		}
+	}
+
+	private void ClearRangePlaceholders()
+	{
+		LogRangePlaceholders(null, null, null, null);
+		ApplyRangeWatermarks((null, null), (null, null), (null, null), (null, null));
+	}
+
+	private void ApplyRangeWatermarks((string? From, string? To) price, (string? From, string? To) pricePer, (string? From, string? To) area, (string? From, string? To) lot)
+	{
+		void apply()
+		{
+			ApplyWatermark(_statsPriceFrom, price.From);
+			ApplyWatermark(_statsPriceTo, price.To);
+			ApplyWatermark(_statsPricePerSqFrom, pricePer.From);
+			ApplyWatermark(_statsPricePerSqTo, pricePer.To);
+			ApplyWatermark(_statsAreaFrom, area.From);
+			ApplyWatermark(_statsAreaTo, area.To);
+			ApplyWatermark(_statsAreaLotFrom, lot.From);
+			ApplyWatermark(_statsAreaLotTo, lot.To);
+			LogRangeWatermarkStates();
+		}
+
+		if (Dispatcher.UIThread.CheckAccess())
+		{
+			apply();
+		}
+		else
+		{
+			Dispatcher.UIThread.Post(apply, DispatcherPriority.Background);
+		}
+	}
+
+	private static void ApplyWatermark(TextBox textBox, string? placeholder)
+	{
+		textBox.Watermark = string.IsNullOrWhiteSpace(textBox.Text?.Trim()) ? placeholder : null;
+	}
+
+	private void LogRangePlaceholders(string? price, string? pricePer, string? area, string? lot)
+	{
+		_logService.Info($"Filtrų ribos: kaina={price ?? "-"}, €/m²={pricePer ?? "-"}, plotas={area ?? "-"}, sklypas={lot ?? "-"}");
+	}
+
+	private void LogRangeWatermarkStates()
+	{
+		LogTextBoxState(_statsPriceFrom, nameof(_statsPriceFrom));
+		LogTextBoxState(_statsPriceTo, nameof(_statsPriceTo));
+		LogTextBoxState(_statsPricePerSqFrom, nameof(_statsPricePerSqFrom));
+		LogTextBoxState(_statsPricePerSqTo, nameof(_statsPricePerSqTo));
+		LogTextBoxState(_statsAreaFrom, nameof(_statsAreaFrom));
+		LogTextBoxState(_statsAreaTo, nameof(_statsAreaTo));
+		LogTextBoxState(_statsAreaLotFrom, nameof(_statsAreaLotFrom));
+		LogTextBoxState(_statsAreaLotTo, nameof(_statsAreaLotTo));
+	}
+
+	private void LogTextBoxState(TextBox box, string name)
+	{
+		string text = box.Text ?? string.Empty;
+		string watermark = box.Watermark ?? "-";
+		_logService.Info($"Watermark state [{name}]: Text='{text}' Watermark='{watermark}' Visible={box.IsVisible} Enabled={box.IsEnabled} Opacity={box.Opacity} Background={box.Background} Foreground={box.Foreground} Focused={box.IsFocused}");
+	}
+
+	private static string? BuildRangePlaceholder(double? min, double? max, string unit)
+	{
+		if (!min.HasValue && !max.HasValue)
+		{
+			return null;
+		}
+		string FormatValue(double value)
+		{
+			return FormatNumber(value);
+		}
+		if (min.HasValue && max.HasValue)
+		{
+			return $"nuo {FormatValue(min.Value)} iki {FormatValue(max.Value)} {unit}";
+		}
+		if (min.HasValue)
+		{
+			return $"nuo {FormatValue(min.Value)} {unit}";
+		}
+		return $"iki {FormatValue(max.Value)} {unit}";
+	}
+
+	private static (string? From, string? To) BuildRangePlaceholders(double? min, double? max, string unit)
+	{
+		string FormatValue(double value) => FormatNumber(value);
+		string? from = min.HasValue ? $"nuo {FormatValue(min.Value)} {unit}" : null;
+		string? to = max.HasValue ? $"iki {FormatValue(max.Value)} {unit}" : null;
+		return (from, to);
 	}
 
 	private static string FormatNumber(double value)
 	{
-		return value.ToString("N0", CultureInfo.InvariantCulture);
+		return value.ToString("N0", CultureInfo.GetCultureInfo("lt-LT"));
 	}
 
 	private void UpdateStatsSummary(IReadOnlyList<StatsListing> listings, double? aggregatedAvgPricePerSquare, double? aggregatedMinPrice, double? aggregatedMaxPrice, double? aggregatedAvgPrice, string? aggregatedMaxPriceUrl, string? aggregatedMinPriceUrl)
@@ -2804,8 +2902,12 @@ public partial class MainWindow : Window
 			Window dialog = new Window
 			{
 				Title = "Istorija",
-				SizeToContent = SizeToContent.WidthAndHeight,
-				CanResize = false,
+				SizeToContent = SizeToContent.Manual,
+				CanResize = true,
+				MinWidth = 640.0,
+				MinHeight = 420.0,
+				Width = 820.0,
+				Height = 560.0,
 				Content = root
 			};
 			WindowBase owner = base.Owner;
@@ -2881,7 +2983,7 @@ public partial class MainWindow : Window
 				base.Title = "Palyginimo modulis";
 				base.Width = 420.0;
 				base.Height = 260.0;
-				base.CanResize = false;
+				base.CanResize = true;
 				base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
 			base.Background = Brushes.White;
 			CompareStyleRegistry.Apply(base.Styles);
@@ -2991,7 +3093,7 @@ public partial class MainWindow : Window
 				base.Width = 1120.0;
 				base.Height = 420.0;
 				base.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-				base.CanResize = false;
+				base.CanResize = true;
 				base.Background = new SolidColorBrush(Color.Parse("#f6f7fb"));
 				CompareStyleRegistry.Apply(base.Styles);
 				EnableWindowActivationOnClick(this);
@@ -3593,20 +3695,7 @@ public partial class MainWindow : Window
 			public Color? ExplicitColor { get; }
 		}
 
-		private sealed class LineVisualState
-		{
-			public LineVisualState(Polyline line)
-			{
-				Line = line;
-			}
-
-			public Polyline Line { get; }
-
-			public List<Ellipse> Markers { get; } = new List<Ellipse>();
-
-			public Border? LegendSwatch { get; set; }
-		}
-
+		// ChartControl renders axes, grid, and lines directly into the control bounds so the window can remain resizable.
 		private static Task ShowLineChartAsync(Window owner, IReadOnlyList<LineSeries> series, string title, string? resultsText = null)
 		{
 			if (owner == null || series == null)
@@ -3618,107 +3707,6 @@ public partial class MainWindow : Window
 			if (validSeries.Count == 0)
 			{
 				return Task.CompletedTask;
-			}
-
-			List<double> values = validSeries.SelectMany((LineSeries s) => s.Points.Select((point) => point.value)).ToList();
-			if (values.Count == 0)
-			{
-				return Task.CompletedTask;
-			}
-
-			double minValue = values.Min();
-			double maxValue = values.Max();
-			if (Math.Abs(maxValue - minValue) < 0.0001)
-			{
-				maxValue = minValue + 1.0;
-			}
-
-			List<DateTime> allDates = validSeries.SelectMany((LineSeries s) => s.Points.Select((point) => point.date)).Distinct().OrderBy((DateTime d) => d).ToList();
-			if (allDates.Count == 0)
-			{
-				return Task.CompletedTask;
-			}
-
-			Dictionary<DateTime, int> dateIndex = new Dictionary<DateTime, int>();
-			for (int i = 0; i < allDates.Count; i++)
-			{
-				dateIndex[allDates[i]] = i;
-			}
-
-			double plotWidth = 632.0;
-			double plotHeight = 316.0;
-			Canvas canvas = new Canvas
-			{
-				Width = 720.0,
-				Height = 420.0,
-				Background = Brushes.White
-			};
-			Window? chartWindow = null;
-
-			for (int i2 = 0; i2 <= 6; i2++)
-			{
-				double ratio = (double)i2 / 6.0;
-				double y = 40.0 + (1.0 - ratio) * plotHeight;
-				Line gridLine = new Line
-				{
-					StartPoint = new Point(64.0, y),
-					EndPoint = new Point(64.0 + plotWidth, y),
-					Stroke = new SolidColorBrush(Color.Parse("#e2e8f0")),
-					StrokeThickness = 1.0
-				};
-				canvas.Children.Add(gridLine);
-				double value = minValue + (maxValue - minValue) * ratio;
-				TextBlock label = new TextBlock
-				{
-					Text = $"{value:0}",
-					Foreground = Brushes.Gray,
-					FontSize = 12.0
-				};
-				Canvas.SetLeft(label, 8.0);
-				Canvas.SetTop(label, y - 10.0);
-				canvas.Children.Add(label);
-			}
-
-			Line yAxis = new Line
-			{
-				StartPoint = new Point(64.0, 40.0),
-				EndPoint = new Point(64.0, 40.0 + plotHeight),
-				Stroke = new SolidColorBrush(Color.Parse("#cbd5e1")),
-				StrokeThickness = 1.5
-			};
-			canvas.Children.Add(yAxis);
-			Line xAxis = new Line
-			{
-				StartPoint = new Point(64.0, 40.0 + plotHeight),
-				EndPoint = new Point(64.0 + plotWidth, 40.0 + plotHeight),
-				Stroke = new SolidColorBrush(Color.Parse("#cbd5e1")),
-				StrokeThickness = 1.5
-			};
-			canvas.Children.Add(xAxis);
-
-			int xLabelCount = Math.Min(allDates.Count, 6);
-			for (int i3 = 0; i3 < xLabelCount; i3++)
-			{
-				int idx = ((xLabelCount != 1) ? ((int)Math.Round((double)(i3 * (allDates.Count - 1)) / (double)(xLabelCount - 1))) : 0);
-				double ratioX = ((allDates.Count == 1) ? 0.0 : ((double)idx / (double)(allDates.Count - 1)));
-				double x = 64.0 + ratioX * plotWidth;
-				Line tick = new Line
-				{
-					StartPoint = new Point(x, 40.0 + plotHeight),
-					EndPoint = new Point(x, 40.0 + plotHeight + 6.0),
-					Stroke = new SolidColorBrush(Color.Parse("#cbd5e1")),
-					StrokeThickness = 1.0
-				};
-				canvas.Children.Add(tick);
-				TextBlock label2 = new TextBlock
-				{
-					Text = allDates[idx].ToString("yyyy-MM-dd"),
-					Foreground = Brushes.Gray,
-					FontSize = 12.0
-				};
-				Canvas.SetLeft(label2, x - 36.0);
-				Canvas.SetTop(label2, 40.0 + plotHeight + 8.0);
-				canvas.Children.Add(label2);
 			}
 
 			Color[] palette = new Color[]
@@ -3733,66 +3721,21 @@ public partial class MainWindow : Window
 				Color.Parse("#10b981")
 			};
 
-			Dictionary<LineSeries, Color> assignedColors = new Dictionary<LineSeries, Color>();
-			Dictionary<LineSeries, LineVisualState> lineVisualStates = new Dictionary<LineSeries, LineVisualState>();
+			List<ChartControl.ChartSeries> chartSeriesList = new List<ChartControl.ChartSeries>();
 			int paletteIndex = 0;
 			foreach (LineSeries lineSeries in validSeries)
 			{
-				Color color2 = lineSeries.ExplicitColor ?? palette[paletteIndex % palette.Length];
-				assignedColors[lineSeries] = color2;
+				Color assignedColor = lineSeries.ExplicitColor ?? palette[paletteIndex % palette.Length];
 				paletteIndex++;
+				chartSeriesList.Add(new ChartControl.ChartSeries(lineSeries.Name, lineSeries.Points, assignedColor));
 			}
 
-			void UpdateSeriesColor(LineVisualState visual, Color color)
+			ChartControl chartControl = new ChartControl
 			{
-				visual.Line.Stroke = new SolidColorBrush(color);
-				foreach (Ellipse marker in visual.Markers)
-				{
-					marker.Fill = new SolidColorBrush(color);
-				}
-
-				if (visual.LegendSwatch != null)
-				{
-					visual.LegendSwatch.Background = new SolidColorBrush(color);
-				}
-			}
-
-			foreach (LineSeries lineSeries2 in validSeries)
-			{
-				Color color3 = assignedColors[lineSeries2];
-				Polyline polyline2 = new Polyline
-				{
-					Stroke = new SolidColorBrush(color3),
-					StrokeThickness = 2.0
-				};
-				LineVisualState lineState = new LineVisualState(polyline2);
-				foreach ((DateTime date, double value2) in lineSeries2.Points)
-				{
-					if (!dateIndex.TryGetValue(date, out var indexValue))
-					{
-						continue;
-					}
-					double ratioX2 = ((allDates.Count == 1) ? 0.0 : ((double)indexValue / (double)(allDates.Count - 1)));
-					double x2 = 64.0 + ratioX2 * plotWidth;
-					double ratioY2 = (value2 - minValue) / (maxValue - minValue);
-					double y2 = 40.0 + (1.0 - ratioY2) * plotHeight;
-					polyline2.Points.Add(new Point(x2, y2));
-					Ellipse marker2 = new Ellipse
-					{
-						Width = 8.0,
-						Height = 8.0,
-						Fill = new SolidColorBrush(color3)
-					};
-					lineState.Markers.Add(marker2);
-					Canvas.SetLeft(marker2, x2 - 4.0);
-					Canvas.SetTop(marker2, y2 - 4.0);
-					canvas.Children.Add(marker2);
-					ToolTip.SetTip(marker2, $"{lineSeries2.Name}: {value2:0} € ({date:yyyy-MM-dd})");
-					ToolTip.SetTip(marker2, $"{lineSeries2.Name}: {value2:0} € ({date:yyyy-MM-dd})");
-				}
-				canvas.Children.Add(polyline2);
-				lineVisualStates[lineSeries2] = lineState;
-			}
+				Series = chartSeriesList,
+				HorizontalAlignment = HorizontalAlignment.Stretch,
+				VerticalAlignment = VerticalAlignment.Stretch
+			};
 
 			StackPanel legendRoot = new StackPanel
 			{
@@ -3800,51 +3743,49 @@ public partial class MainWindow : Window
 				Spacing = 4.0,
 				Margin = new Thickness(0.0, 8.0, 0.0, 8.0)
 			};
-			foreach (LineSeries lineSeries3 in validSeries)
+
+			foreach (ChartControl.ChartSeries chartSeries in chartSeriesList)
 			{
-				Color color4 = assignedColors[lineSeries3];
-				StackPanel legendRow = new StackPanel
-				{
-					Orientation = Orientation.Horizontal,
-					Spacing = 6.0
-				};
-				LineVisualState lineState = lineVisualStates[lineSeries3];
 				Border colorSwatch = new Border
 				{
 					Width = 16.0,
 					Height = 10.0,
 					CornerRadius = new CornerRadius(4.0),
-					Background = new SolidColorBrush(color4),
+					Background = new SolidColorBrush(chartSeries.Color),
 					Cursor = new Cursor(StandardCursorType.Hand)
 				};
-				lineState.LegendSwatch = colorSwatch;
+
 				ColorPicker popupPicker = new ColorPicker
 				{
-					Color = color4,
+					Color = chartSeries.Color,
 					Width = 320.0,
 					Height = 220.0
 				};
+
 				Border popupHost = new Border
 				{
-					Padding = new Thickness(12),
+					Padding = new Thickness(12.0),
 					Background = Brushes.Black,
 					Child = popupPicker
 				};
+
 				Popup popup = new Popup
 				{
 					PlacementTarget = colorSwatch,
 					Placement = PlacementMode.Bottom,
 					Child = popupHost
 				};
+
 				bool pointerOverSwatch = false;
 				bool pointerOverPopup = false;
 				DispatcherTimer? closeTimer = null;
+
 				void ScheduleClose()
 				{
 					closeTimer?.Stop();
 					closeTimer = new DispatcherTimer
 					{
-						Interval = TimeSpan.FromMilliseconds(200)
+						Interval = TimeSpan.FromMilliseconds(200.0)
 					};
 					closeTimer.Tick += (_, _) =>
 					{
@@ -3856,13 +3797,15 @@ public partial class MainWindow : Window
 					};
 					closeTimer.Start();
 				}
+
 				void RefreshPopupColor(Color color)
 				{
+					chartSeries.Color = color;
 					popupPicker.Color = color;
 					colorSwatch.Background = new SolidColorBrush(color);
-					assignedColors[lineSeries3] = color;
-					UpdateSeriesColor(lineState, color);
+					chartControl.InvalidateVisual();
 				}
+
 				popupPicker.PropertyChanged += (_, e) =>
 				{
 					if (e.Property == ColorPicker.ColorProperty)
@@ -3870,10 +3813,11 @@ public partial class MainWindow : Window
 						RefreshPopupColor(popupPicker.Color);
 					}
 				};
+
 				colorSwatch.PointerEntered += (_, _) =>
 				{
 					pointerOverSwatch = true;
-					RefreshPopupColor(assignedColors[lineSeries3]);
+					RefreshPopupColor(chartSeries.Color);
 					popup.IsOpen = true;
 				};
 				colorSwatch.PointerExited += (_, _) =>
@@ -3890,10 +3834,16 @@ public partial class MainWindow : Window
 					pointerOverPopup = false;
 					ScheduleClose();
 				};
+
+				StackPanel legendRow = new StackPanel
+				{
+					Orientation = Orientation.Horizontal,
+					Spacing = 6.0
+				};
 				legendRow.Children.Add(colorSwatch);
 				legendRow.Children.Add(new TextBlock
 				{
-					Text = lineSeries3.Name,
+					Text = chartSeries.Name,
 					Foreground = Brushes.DimGray,
 					FontSize = 12.0,
 					VerticalAlignment = VerticalAlignment.Center
@@ -3908,7 +3858,7 @@ public partial class MainWindow : Window
 				FontSize = 16.0,
 				FontWeight = FontWeight.DemiBold,
 				Foreground = Brushes.DimGray,
-				Margin = new Thickness(0.0, 0.0, 0.0, 8.0)
+				Margin = new Thickness(0.0, 0.0, 0.0, 6.0)
 			};
 
 			Grid layout = new Grid();
@@ -3922,7 +3872,7 @@ public partial class MainWindow : Window
 			layout.Children.Add(titleBlock);
 			Grid.SetRow(legendRoot, 1);
 			layout.Children.Add(legendRoot);
-			int canvasRow = layout.RowDefinitions.Count - 1;
+			int chartRow = layout.RowDefinitions.Count - 1;
 			if (!string.IsNullOrWhiteSpace(resultsText))
 			{
 				TextBlock resultsBlock = new TextBlock
@@ -3936,14 +3886,24 @@ public partial class MainWindow : Window
 				Grid.SetRow(resultsBlock, 2);
 				layout.Children.Add(resultsBlock);
 			}
-			Grid.SetRow(canvas, canvasRow);
-			layout.Children.Add(canvas);
 
-			chartWindow = new Window
+			Border chartHost = new Border
+			{
+				Background = Brushes.Transparent,
+				Child = chartControl
+			};
+			Grid.SetRow(chartHost, chartRow);
+			layout.Children.Add(chartHost);
+
+			Window chartWindow = new Window
 			{
 				Title = title,
-				SizeToContent = SizeToContent.WidthAndHeight,
-				CanResize = false,
+				SizeToContent = SizeToContent.Manual,
+				CanResize = true,
+				MinWidth = 520.0,
+				MinHeight = 360.0,
+				Width = 820.0,
+				Height = 520.0,
 				Content = new Border
 				{
 					Background = Brushes.White,
@@ -3957,6 +3917,7 @@ public partial class MainWindow : Window
 			return Task.CompletedTask;
 		}
 
+		// ChartControl renders axes, grid, and lines directly into the control bounds so the window can remain resizable.
 		private static Task<Color?> ShowColorPickerDialogAsync(Window owner, Color initialColor)
 		{
 			TaskCompletionSource<Color?> tcs = new(TaskCreationOptions.RunContinuationsAsynchronously);
@@ -4085,7 +4046,7 @@ public partial class MainWindow : Window
 				SizeToContent = SizeToContent.Manual,
 				MinWidth = 420.0,
 				MinHeight = 360.0,
-				CanResize = false,
+				CanResize = true,
 				WindowStartupLocation = WindowStartupLocation.CenterOwner,
 				Content = new Border
 				{

@@ -40,6 +40,11 @@
 3. Skelbimų istoriją rasite statistikos lange: paspauskite „Statistika“, papildykite filtrus, „Rodyti naujausius/pabrangusius/atpigusius“, „Istorija“ ar „Grafikas“.
 4. Priklausomi filtrai (miestas → objektas → adresas → kambariai) ir watermark rodo galimus min/max rubus.
 
+## Naujausi atnaujinimai
+
+- Chapter 68/69 adaptuoja šonus: statisticos ir grafiko langai dabar yra sklandžiai keičiamo dydžio ir neapkraunami scroll‘ais, o palyginimo grafikas naudoja naują `ChartControl`, kuris brėžia tiesiogiai pagal gauto lango ribas.
+- Chapter 70 pagerina Range filter veikimą: kiekviena „nuo/iki“ įvestis turi atskirą watermark („nuo …“ ir „iki …“), todėl vartotojas mato aiškias kryptis pagal DB min/max reikšmes be papildomo kodo perrašymo.
+
 ## Papildoma informacija
 - `chapters.md` seka projekto funkcijų eiliškumą nuo pradinės sąsajos iki statistikos filtrų (darbuose iki 38 skyriaus).
 - `RpaAruodas/Services` kataloge yra atskiros paslaugos: konfigūracija, žurnalas, Playwright, automatika ir DB užklausos.
